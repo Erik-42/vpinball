@@ -1,7 +1,9 @@
 name: prerelease
-on: 
-  permissions:
-    contents: write
+
+permissions:
+  contents: write
+
+on:
   workflow_dispatch:
     inputs:
       sha:
@@ -21,8 +23,8 @@ jobs:
     steps:
       - id: sha
         run: |
-           SHA=$(if [[ "${{ github.event.inputs.sha }}" ]]; then echo "${{ github.event.inputs.sha }}"; else echo "${GITHUB_SHA}"; fi)
-           echo "sha=${SHA}" >> $GITHUB_OUTPUT
+          SHA=$(if [[ "${{ github.event.inputs.sha }}" ]]; then echo "${{ github.event.inputs.sha }}"; else echo "${GITHUB_SHA}"; fi)
+          echo "sha=${SHA}" >> $GITHUB_OUTPUT
       - uses: actions/checkout@v6
         with:
           ref: ${{ steps.sha.outputs.sha }}
@@ -39,7 +41,7 @@ jobs:
 
   prerelease:
     runs-on: ubuntu-24.04
-    needs: [ version ]
+    needs: [version]
     steps:
       - name: Find build run
         id: find-run
@@ -63,5 +65,5 @@ jobs:
           name: "v${{ needs.version.outputs.tag }}"
           tag: "v${{ needs.version.outputs.tag }}"
           commit: ${{ needs.version.outputs.sha }}
-          token:  ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           artifacts: "artifacts/**/*"
