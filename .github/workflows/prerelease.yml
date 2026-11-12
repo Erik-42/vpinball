@@ -1,5 +1,7 @@
 name: prerelease
 on: 
+  permissions:
+    contents: write
   workflow_dispatch:
     inputs:
       sha:
