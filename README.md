@@ -35,6 +35,46 @@ An [unofficial wiki](https://github.com/dekay/vpinball-wiki) is currently being 
 
 Build instructions are available in the [make directory README](make/README.md).
 
+## Installation sur Linux
+
+### Via le paquet .deb (recommandé)
+
+Téléchargez le dernier paquet `.deb` depuis la [page des releases](https://github.com/vpinball/vpinball/releases) et installez-le :
+
+```bash
+sudo dpkg -i vpinball_<version>_amd64.deb
+sudo apt-get install -f  # au cas où des dépendances manqueraient
+```
+
+Cela installe :
+- Le binaire `vpinball` dans `/usr/local/bin/`
+- Les entrées de menu **VPinball – Jouer** et **VPinball – Éditeur**
+- L'icône de l'application
+
+### Via le script d'installation manuelle
+
+Si vous avez téléchargé l'archive `vpinball-linux.tar.gz` depuis les releases :
+
+```bash
+tar xzf vpinball-linux.tar.gz
+cd vpinball-linux
+sudo ./install.sh
+```
+
+Le script installe le binaire, les raccourcis `.desktop` et l'icône dans `~/.local/share/`.
+
+### Lancer une table spécifique
+
+```bash
+# Jouer à une table
+vpinball -play /chemin/vers/table.vpz
+
+# Ouvrir l'éditeur
+vpinball -LiveEdit /chemin/vers/table.vpz
+```
+
+Si aucune table n'est spécifiée avec `-play`, le jeu démarre et vous permet de choisir une table.
+
 ## Participate
 
 Read through our [contribution](CONTRIBUTING.md) rules carefully before opening PRs, please.

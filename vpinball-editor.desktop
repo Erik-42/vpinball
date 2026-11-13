@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=VPinball – Éditeur
+Comment=Lancer l’éditeur Visual Pinball
+Exec=VPinballX_BGFX -LiveEdit
+Icon=vpinball
+Terminal=false
+Categories=Development;Game;
+StartupNotify=true
