@@ -1,0 +1,39 @@
+#!/bin/sh
+set -e
+
+# postinst script for vpinball-common
+#
+# Architecture-independent postinst script
+
+case "$1" in
+    configure)
+        # Desktop database update (if desktop-file-utils is installed)
+        if command -v update-desktop-database >/dev/null 2>&1; then
+            update-desktop-database -q usr/share/applications || true
+        fi
+
+        # Icon cache update (if gtk-update-icon-cache is installed)
+        if command -v gtk-update-icon-cache >/dev/null 2>&1; then
+            gtk-update-icon-cache -q -t usr/share/icons/hicolor 2>/dev/null || true
+        fi
+
+        # Validate desktop files
+        if command -v desktop-file-validate >/dev/null 2>&1; then
+            for f in usr/share/applications/*.desktop; do
+                desktop-file-validate "$f" || true
+            done
+        fi
+        ;;
+
+    abort-upgrade|abort-remove|abort-deconfigure)
+        ;;
+
+    *)
+        echo "postinst called with unknown argument \`$1'" >&2
+        exit 1
+        ;;
+esac
+
+#DEBHELPER#
+
+exit 0

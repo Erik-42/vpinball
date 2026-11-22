@@ -1,0 +1,22 @@
+vpinball (10.8.1-1) unstable; urgency=medium
+
+  [ Erik ]
+  * Initial Debian package
+  * Add BGFX renderer support with OpenXR support
+  * Add plugin system support (DMD, B2S, DOF, etc.)
+  * Add VR/XR support
+  * Add desktop integration files
+  * Add documentation and examples
+
+ -- Erik <erik@users.noreply.github.com>  Wed, 22 Nov 2024 00:00:00 +0000
+
+vpinball (10.8.0-1) unstable; urgency=medium
+
+  [ Original Upstream ]
+  * New upstream release 10.8.0
+  * Add Linux support (x64, arm64)
+  * Add Raspberry Pi support
+  * Add RK3588 support
+  * Various bug fixes and improvements
+
+ -- Visual Pinball Team <team@vpinball.org>  Fri, 01 Jan 2024 00:00:00 +0000

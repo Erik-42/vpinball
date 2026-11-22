@@ -125,18 +125,18 @@ if(BUILD_SHARED AND NOT (PLATFORM STREQUAL "windows" AND NOT MSVC))
             COMMAND "${CMAKE_COMMAND}" -E copy "${RUNTIME_LIBS_DIR}/libwinpthread-1.dll" "${PLUGINS_DIR}/dof/libwinpthread-1.dll"
          )
       elseif(PLATFORM STREQUAL "linux")
-         add_custom_command(TARGET DOFPlugin POST_BUILD
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libdof.so" "${PLUGINS_DIR}/dof/"
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libdof.so.*" "${PLUGINS_DIR}/dof/"
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libusb-1.0.so" "${PLUGINS_DIR}/dof/"
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libusb-1.0.so.*" "${PLUGINS_DIR}/dof/"
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libserialport.so" "${PLUGINS_DIR}/dof/"
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libserialport.so.*" "${PLUGINS_DIR}/dof/"
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libhidapi-hidraw.so" "${PLUGINS_DIR}/dof/"
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libhidapi-hidraw.so.*" "${PLUGINS_DIR}/dof/"
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libftdi1.so" "${PLUGINS_DIR}/dof/"
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libftdi1.so.*" "${PLUGINS_DIR}/dof/"
-         )
+         # DOF plugin Linux libraries
+         foreach(_lib "libdof.so" "libdof.so.0" "libdof.so.0.5.4"
+                        "libusb-1.0.so" "libusb-1.0.so.0" "libusb-1.0.so.0.5.0"
+                        "libserialport.so" "libserialport.so.0" "libserialport.so.0.1.1"
+                        "libhidapi-hidraw.so" "libhidapi-hidraw.so.0" "libhidapi-hidraw.so.0.15.0"
+                        "libftdi1.so" "libftdi1.so.2" "libftdi1.so.2.5.0")
+            if(EXISTS "${RUNTIME_LIBS_DIR}/${_lib}")
+               add_custom_command(TARGET DOFPlugin POST_BUILD
+                  COMMAND "${CMAKE_COMMAND}" -E copy_if_different "${RUNTIME_LIBS_DIR}/${_lib}" "${PLUGINS_DIR}/dof/"
+               )
+            endif()
+         endforeach()
       endif()
    endif()
 endif()

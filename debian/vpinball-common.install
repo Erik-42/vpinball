@@ -1,0 +1,10 @@
+# Common files for all architectures
+docs usr/share/doc/vpinball-common/
+README.md usr/share/doc/vpinball-common/
+LICENSE usr/share/doc/vpinball-common/
+docs/Installation\ sur\ Linux.md usr/share/doc/vpinball-common/
+
+# Desktop integration (architecture-independent)
+apps/linux/vpinball.desktop usr/share/applications/
+apps/linux/vpinball-editor.desktop usr/share/applications/
+apps/linux/vpinball.svg usr/share/icons/hicolor/scalable/apps/

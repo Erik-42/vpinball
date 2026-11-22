@@ -1,0 +1,14 @@
+version=4
+
+# Watch file for Visual Pinball X
+# Use uscan to check for new releases
+
+opts=filenamemangle=\
+  s/(.*)/visual-pinball-x-$1.tar.gz/ \
+  s/vpinball-(.+)\.orig\.tar\.gz/vpinball-\1.orig.tar.gz/ \
+  s/vpinball-(.+)\.debian\.tar\.xz/vpinball-\1.debian.tar.xz/ \
+  s/vpinball-(.+)\.dsc/vpinball-\1.dsc/ \
+  s/.+\/(.+)\/[^\/]+$/$1/
+
+  \
+https://github.com/vpinball/vpinball/tags .*/archive/refs/tags/v(.+)\.tar\.gz

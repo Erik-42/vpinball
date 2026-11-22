@@ -1,0 +1,46 @@
+TODO for vpinball Debian packaging
+===================================
+
+To be completed before first official package build:
+
+1. Generate correct MD5 checksums
+   - Run: md5sum debian/*.install > debian/*.md5sums
+   - Or use: dh_md5sums during build
+
+2. Test package build
+   - Run: dpkg-buildpackage -us -uc
+   - Verify all files are included
+
+3. Validate desktop files
+   - Run: desktop-file-validate apps/linux/*.desktop
+
+4. Test installation
+   - Run: dpkg -i ../vpinball_*.deb
+   - Verify application launches
+
+5. Update version in changelog
+   - Use: dch -l~b1731
+   - Or edit debian/changelog directly
+
+6. Sign package (optional for official release)
+   - Run: debsign ../vpinball_*.changes
+   - Requires GPG key setup
+
+Additional improvements for future versions:
+
+- Create vpinball-tables metapackage for community tables
+- Create vpinball-docs metapackage for documentation
+- Add AppImage support for easy distribution
+- Add Flatpak manifest for Flathub
+- Add Snapcraft.yaml for Snap Store
+- Create Docker image for containerized setup
+
+Package naming convention:
+- Binary: vpinball
+- Common: vpinball-common
+- Debug: vpinball-dbg
+
+Architecture support:
+- amd64 (Debian stable)
+- arm64 (Debian stable)
+- i386 (optional)

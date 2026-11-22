@@ -1,0 +1,15 @@
+build/VPinballX_BGFX usr/bin/
+build/vpx-test usr/bin/
+plugins/* usr/lib/vpinball/plugins/
+src/assets usr/share/vpinball/
+docs usr/share/doc/vpinball/
+README.md usr/share/doc/vpinball/
+LICENSE usr/share/doc/vpinball/
+docs/Installation\ sur\ Linux.md usr/share/doc/vpinball/
+
+# Desktop files
+apps/linux/vpinball.desktop usr/share/applications/
+apps/linux/vpinball-editor.desktop usr/share/applications/
+
+# Icons
+apps/linux/vpinball.svg usr/share/icons/hicolor/scalable/apps/

@@ -243,22 +243,17 @@ if(BUILD_SHARED)
             COMMAND "${CMAKE_COMMAND}" -E copy "${RUNTIME_LIBS_DIR}/libstdc++-6.dll" "${PLUGINS_DIR}/flexdmd/libstdc++-6.dll"
          )
       elseif(PLATFORM STREQUAL "linux")
-         add_custom_command(TARGET FlexDMDPlugin POST_BUILD
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libSDL3.so" "${PLUGINS_DIR}/flexdmd/"
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libSDL3.so.*" "${PLUGINS_DIR}/flexdmd/"
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libSDL3_image.so" "${PLUGINS_DIR}/flexdmd/"
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libSDL3_image.so.*" "${PLUGINS_DIR}/flexdmd/"
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libavcodec.so" "${PLUGINS_DIR}/flexdmd/"
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libavcodec.so.*" "${PLUGINS_DIR}/flexdmd/"
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libavformat.so" "${PLUGINS_DIR}/flexdmd/"
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libavformat.so.*" "${PLUGINS_DIR}/flexdmd/"
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libavutil.so" "${PLUGINS_DIR}/flexdmd/"
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libavutil.so.*" "${PLUGINS_DIR}/flexdmd/"
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libswresample.so" "${PLUGINS_DIR}/flexdmd/"
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libswresample.so.*" "${PLUGINS_DIR}/flexdmd/"
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libswscale.so" "${PLUGINS_DIR}/flexdmd/"
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libswscale.so.*" "${PLUGINS_DIR}/flexdmd/"
-         )
+         # FlexDMD plugin Linux libraries
+         foreach(_lib "libSDL3.so" "libSDL3.so.0" "libSDL3.so.0.4.20"
+                        "libSDL3_image.so" "libSDL3_image.so.0" "libSDL3_image.so.0.4.8"
+                        "libavcodec.so" "libavformat.so" "libavutil.so"
+                        "libswresample.so" "libswscale.so")
+            if(EXISTS "${RUNTIME_LIBS_DIR}/${_lib}")
+               add_custom_command(TARGET FlexDMDPlugin POST_BUILD
+                  COMMAND "${CMAKE_COMMAND}" -E copy_if_different "${RUNTIME_LIBS_DIR}/${_lib}" "${PLUGINS_DIR}/flexdmd/"
+               )
+            endif()
+         endforeach()
       endif()
    endif()
 endif()

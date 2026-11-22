@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Visual Pinball X Editor
+Comment=Pinball table editor
+Exec=vpinball-editor %f
+Icon=vpinball
+Categories=Game;Amusement;ArcadeGame;
+Keywords=pinball;editor;game;arcade;
+StartupNotify=true
+MimeType=application/x-vpinball-table;text/xml;application/vnd.vpinball.table;
+Terminal=false
+X-XUbuntu-Gettext-Domain=vpinball

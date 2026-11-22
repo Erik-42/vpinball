@@ -1,0 +1,2 @@
+# Debug symbols are stored in a separate package
+usr/lib/debug/ usr/lib/debug/

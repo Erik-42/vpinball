@@ -1,0 +1,47 @@
+{
+  "env": {
+    "ANTHROPIC_MODEL": "auto",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "auto",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "auto",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "auto",
+    "CLAUDE_CODE_AUTO_COMPACT_WINDOW": "131072",
+    "CLAUDE_CODE_ENABLE_GATEWAY_MODEL_DISCOVERY": "1"
+  },
+  "theme": "dark",
+  "permissions": {
+    "allow": [
+      "Bash(npm *)",
+      "Bash(cmake *)",
+      "Bash(git *)",
+      "Bash(make *)",
+      "Bash(gcc *)",
+      "Bash(clang *)",
+      "Bash(raspi*)",
+      "Bash(apt*)",
+      "Bash(dnf*)",
+      "Bash(pacman*)"
+    ]
+  },
+  "mcpServers": {
+    "context7": {
+      "command": "uv",
+      "args": ["chat", "mcp", "server", "context7", "--api-key", "${CONTEXT7_API_KEY}"],
+      "env": {
+        "CONTEXT7_API_KEY": "${CONTEXT7_API_KEY}"
+      }
+    }
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "scripts/security-check.sh"
+          }
+        ]
+      }
+    ]
+  }
+}

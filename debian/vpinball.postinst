@@ -1,0 +1,41 @@
+#!/bin/sh
+set -e
+
+# postinst script for vpinball
+#
+# see: dh_installdeb(1)
+
+case "$1" in
+    configure)
+        # Create user data directory if it doesn't exist
+        if [ ! -d "/usr/share/vpinball" ]; then
+            mkdir -p /usr/share/vpinball
+        fi
+
+        # Set permissions for installed files
+        chown -R root:root /usr/lib/vpinball/plugins 2>/dev/null || true
+        chmod -R 755 /usr/lib/vpinball/plugins 2>/dev/null || true
+
+        # Desktop database update (if desktop-file-utils is installed)
+        if command -v update-desktop-database >/dev/null 2>&1; then
+            update-desktop-database -q usr/share/applications || true
+        fi
+
+        # Icon cache update (if gtk-update-icon-cache is installed)
+        if command -v gtk-update-icon-cache >/dev/null 2>&1; then
+            gtk-update-icon-cache -q -t usr/share/icons/hicolor 2>/dev/null || true
+        fi
+        ;;
+
+    abort-upgrade|abort-remove|abort-deconfigure)
+        ;;
+
+    *)
+        echo "postinst called with unknown argument \`$1'" >&2
+        exit 1
+        ;;
+esac
+
+#DEBHELPER#
+
+exit 0

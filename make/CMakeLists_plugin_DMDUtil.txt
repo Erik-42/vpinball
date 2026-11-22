@@ -125,19 +125,19 @@ if(BUILD_SHARED AND NOT (PLATFORM STREQUAL "windows" AND NOT MSVC))
             COMMAND "${CMAKE_COMMAND}" -E copy "${RUNTIME_LIBS_DIR}/libwinpthread-1.dll" "${PLUGINS_DIR}/dmdutil/libwinpthread-1.dll"
          )
       elseif(PLATFORM STREQUAL "linux")
-         add_custom_command(TARGET DMDUtilPlugin POST_BUILD
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libdmdutil.so" "${PLUGINS_DIR}/dmdutil/"
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libdmdutil.so.*" "${PLUGINS_DIR}/dmdutil/"
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libcargs.so" "${PLUGINS_DIR}/dmdutil/"
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libusb-1.0.so" "${PLUGINS_DIR}/dmdutil/"
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libusb-1.0.so.*" "${PLUGINS_DIR}/dmdutil/"
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libserialport.so" "${PLUGINS_DIR}/dmdutil/"
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libserialport.so.*" "${PLUGINS_DIR}/dmdutil/"
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libsockpp.so" "${PLUGINS_DIR}/dmdutil/"
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libsockpp.so.*" "${PLUGINS_DIR}/dmdutil/"
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libzedmd.so" "${PLUGINS_DIR}/dmdutil/"
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libzedmd.so.*" "${PLUGINS_DIR}/dmdutil/"
-         )
+         # DMDUtil plugin Linux libraries
+         foreach(_lib "libdmdutil.so" "libdmdutil.so.0" "libdmdutil.so.0.14.0"
+                        "libcargs.so" "libcargs.so.1" "libcargs.so.1.0.0"
+                        "libusb-1.0.so" "libusb-1.0.so.0" "libusb-1.0.so.0.5.0"
+                        "libserialport.so" "libserialport.so.0" "libserialport.so.0.1.1"
+                        "libsockpp.so" "libsockpp.so.1" "libsockpp.so.1.0.0"
+                        "libzedmd.so" "libzedmd.so.0" "libzedmd.so.0.11.1")
+            if(EXISTS "${RUNTIME_LIBS_DIR}/${_lib}")
+               add_custom_command(TARGET DMDUtilPlugin POST_BUILD
+                  COMMAND "${CMAKE_COMMAND}" -E copy_if_different "${RUNTIME_LIBS_DIR}/${_lib}" "${PLUGINS_DIR}/dmdutil/"
+               )
+            endif()
+         endforeach()
       endif()
    endif()
 endif()

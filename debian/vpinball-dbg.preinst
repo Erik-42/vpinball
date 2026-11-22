@@ -1,0 +1,25 @@
+#!/bin/sh
+set -e
+
+# preinst script for vpinball-dbg
+#
+# Architecture-specific debug package preinst script
+
+case "$1" in
+    install|upgrade|abort-upgrade|abort-remove|abort-deconfigure)
+        ;;
+
+    deny-remove)
+        echo "vpinball-dbg cannot be removed without vpinball-dbg." >&2
+        exit 1
+        ;;
+
+    *)
+        echo "preinst called with unknown argument \`$1'" >&2
+        exit 1
+        ;;
+esac
+
+#DEBHELPER#
+
+exit 0

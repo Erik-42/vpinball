@@ -35,3 +35,26 @@ VisualPinball.sln
 /.build
 
 /.cache/
+
+# Sensitive tokens and credentials
+.anthr*
+.env
+*.env
+env/
+.envrc
+!.env.example
+
+# AI API tokens
+freellmapi-*
+
+# Debian package build artifacts
+*.deb
+*.build
+*.changes
+*.dsc
+*.tar.*
+*.debian.tar.*
+*.source.*
+debian/files
+debian/.debhelper/
+debian/*.substrels

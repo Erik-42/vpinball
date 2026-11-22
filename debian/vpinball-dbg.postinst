@@ -1,0 +1,24 @@
+#!/bin/sh
+set -e
+
+# postinst script for vpinball-dbg
+#
+# Architecture-specific debug package postinst script
+
+case "$1" in
+    configure)
+        # Debug symbols typically don't need special post-install handling
+        ;;
+
+    abort-upgrade|abort-remove|abort-deconfigure)
+        ;;
+
+    *)
+        echo "postinst called with unknown argument \`$1'" >&2
+        exit 1
+        ;;
+esac
+
+#DEBHELPER#
+
+exit 0

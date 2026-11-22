@@ -1,0 +1,44 @@
+Visual Pinball X for Debian Linux
+==================================
+
+This package provides Visual Pinball X, an open source pinball
+table editor and simulator for Linux.
+
+Installation
+------------
+After installation, you may need to install community table archives
+to use the full functionality of the simulator. Tables are typically
+available from community repositories.
+
+Configuration
+-------------
+- User data files are stored in ~/.config/vpinball/
+- Plugins are installed in /usr/lib/vpinball/plugins/
+- Tables should be placed in ~/.config/vpinball/tables/
+
+Dependencies
+------------
+This package requires the following additional packages for full
+functionality:
+- vpinball-tables: Community pinball tables
+- vpinball-docs: Additional documentation
+
+VR/XR Support
+-------------
+For VR support, additional packages may be required:
+- openxr-demo: OpenXR runtime
+- steam: SteamVR (if using SteamVR runtime)
+
+Plugin System
+-------------
+This package includes several plugins:
+- PinMAME: Emulation of real pinball machines
+- B2S: Backglass display support
+- DOF: Device of Feeling output support
+- DMDUtil: Dot matrix display utilities
+- FlexDMD: Flexible DMD support
+- AltSound: Alternate sound engine
+
+For more information, see:
+- https://github.com/vpinball/vpinball
+- https://vpinball.com/

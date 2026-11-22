@@ -1,0 +1,4 @@
+# Symlinks for common files
+usr/lib/vpinball/vpinball usr/bin/vpinball
+usr/lib/vpinball/vpinball-editor usr/bin/vpinball-editor
+usr/share/doc/vpinball/html usr/share/doc/vpinball-common/html

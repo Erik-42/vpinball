@@ -1,0 +1,25 @@
+#!/bin/sh
+set -e
+
+# preinst script for vpinball
+#
+# see: dh_installdeb(1)
+
+case "$1" in
+    install|upgrade|abort-upgrade|abort-remove|abort-deconfigure)
+        ;;
+
+    deny-remove)
+        echo "vpinball is essential and cannot be removed." >&2
+        exit 1
+        ;;
+
+    *)
+        echo "preinst called with unknown argument \`$1'" >&2
+        exit 1
+        ;;
+esac
+
+#DEBHELPER#
+
+exit 0

@@ -1,0 +1,24 @@
+#!/bin/sh
+set -e
+
+# postrm script for vpinball-dbg
+#
+# Architecture-specific debug package postrm script
+
+case "$1" in
+    remove|purge|deconfigure)
+        # Debug symbols typically don't need special removal handling
+        ;;
+
+    abort-upgrade|abort-remove|abort-deconfigure)
+        ;;
+
+    *)
+        echo "postrm called with unknown argument \`$1'" >&2
+        exit 1
+        ;;
+esac
+
+#DEBHELPER#
+
+exit 0

@@ -110,10 +110,12 @@ if(BUILD_SHARED)
             COMMAND "${CMAKE_COMMAND}" -E copy "${RUNTIME_LIBS_DIR}/libwinpthread-1.dll" "${PLUGINS_DIR}/altsound/libwinpthread-1.dll"
          )
       elseif(PLATFORM STREQUAL "linux")
-         add_custom_command(TARGET AltSoundPlugin POST_BUILD
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libaltsound.so" "${PLUGINS_DIR}/altsound/"
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libaltsound.so.*" "${PLUGINS_DIR}/altsound/"
-         )
+         # Altsound library for Linux
+         if(EXISTS "${RUNTIME_LIBS_DIR}/libaltsound.so")
+            add_custom_command(TARGET AltSoundPlugin POST_BUILD
+               COMMAND "${CMAKE_COMMAND}" -E copy_if_different "${RUNTIME_LIBS_DIR}/libaltsound.so" "${PLUGINS_DIR}/altsound/"
+            )
+         endif()
       endif()
    endif()
 endif()

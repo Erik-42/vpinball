@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <title>Visual Pinball X</title>
+  <rect width="256" height="256" rx="16" fill="#2a2a2a"/>
+  <circle cx="128" cy="128" r="80" fill="#ff6b35"/>
+  <text x="128" y="138" font-family="Arial" font-size="24" text-anchor="middle" fill="white" font-weight="bold">VPX</text>
+  <rect x="80" y="180" width="96" height="12" rx="6" fill="#f0f0f0"/>
+</svg>

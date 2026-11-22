@@ -559,7 +559,7 @@ elseif(PLATFORM STREQUAL "macos")
    add_custom_command(TARGET vpinball POST_BUILD
       COMMAND "${CMAKE_COMMAND}" -E remove_directory "$<TARGET_FILE_DIR:vpinball>/../Frameworks"
       COMMAND "${CMAKE_COMMAND}" -E make_directory "$<TARGET_FILE_DIR:vpinball>/../Frameworks"
-      COMMAND cp -a "${RUNTIME_LIBS_DIR}/*.dylib" "$<TARGET_FILE_DIR:vpinball>/../Frameworks"
+      COMMAND "${CMAKE_COMMAND}" -E copy_directory "${RUNTIME_LIBS_DIR}" "$<TARGET_FILE_DIR:vpinball>/../Frameworks"
       COMMAND "${CMAKE_COMMAND}" -E copy "${CMAKE_SOURCE_DIR}/apps/macos/VPinballX.icns" "$<TARGET_FILE_DIR:vpinball>/../Resources"
    )
 
@@ -700,28 +700,60 @@ elseif(PLATFORM STREQUAL "linux")
    endif()
 
    if(POST_BUILD_COPY_EXT_LIBS)
-      add_custom_command(TARGET vpinball POST_BUILD
-         COMMAND cp -a "${RUNTIME_LIBS_DIR}/libSDL3.so" "$<TARGET_FILE_DIR:vpinball>"
-         COMMAND cp -a "${RUNTIME_LIBS_DIR}/libSDL3.so.*" "$<TARGET_FILE_DIR:vpinball>"
-         COMMAND cp -a "${RUNTIME_LIBS_DIR}/libSDL3_ttf.so" "$<TARGET_FILE_DIR:vpinball>"
-         COMMAND cp -a "${RUNTIME_LIBS_DIR}/libSDL3_ttf.so.*" "$<TARGET_FILE_DIR:vpinball>"
-         COMMAND cp -a "${RUNTIME_LIBS_DIR}/libfreeimage.so" "$<TARGET_FILE_DIR:vpinball>"
-         COMMAND cp -a "${RUNTIME_LIBS_DIR}/libfreeimage.so.*" "$<TARGET_FILE_DIR:vpinball>"
-         COMMAND cp -a "${RUNTIME_LIBS_DIR}/libhidapi-hidraw.so" "$<TARGET_FILE_DIR:vpinball>"
-         COMMAND cp -a "${RUNTIME_LIBS_DIR}/libhidapi-hidraw.so.*" "$<TARGET_FILE_DIR:vpinball>"
-         COMMAND cp -a "${RUNTIME_LIBS_DIR}/libwinevbs.so" "$<TARGET_FILE_DIR:vpinball>"
-         COMMAND cp -a "${RUNTIME_LIBS_DIR}/libwinevbs.so.*" "$<TARGET_FILE_DIR:vpinball>"
-      )
-      if(RENDERER STREQUAL "BGFX")
+      # SDL3 libraries
+      foreach(_lib "libSDL3.so" "libSDL3.so.0" "libSDL3.so.0.4.20")
+         if(EXISTS "${RUNTIME_LIBS_DIR}/${_lib}")
+            add_custom_command(TARGET vpinball POST_BUILD
+               COMMAND "${CMAKE_COMMAND}" -E copy_if_different "${RUNTIME_LIBS_DIR}/${_lib}" "$<TARGET_FILE_DIR:vpinball>"
+            )
+         endif()
+     endforeach()
+      # SDL3_ttf libraries
+      foreach(_lib "libSDL3_ttf.so" "libSDL3_ttf.so.0" "libSDL3_ttf.so.0.2.2")
+         if(EXISTS "${RUNTIME_LIBS_DIR}/${_lib}")
+            add_custom_command(TARGET vpinball POST_BUILD
+               COMMAND "${CMAKE_COMMAND}" -E copy_if_different "${RUNTIME_LIBS_DIR}/${_lib}" "$<TARGET_FILE_DIR:vpinball>"
+            )
+         endif()
+      endforeach()
+      # FreeImage library
+      if(EXISTS "${RUNTIME_LIBS_DIR}/libfreeimage.so")
          add_custom_command(TARGET vpinball POST_BUILD
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libbgfx.so" "$<TARGET_FILE_DIR:vpinball>"
+            COMMAND "${CMAKE_COMMAND}" -E copy_if_different "${RUNTIME_LIBS_DIR}/libfreeimage.so" "$<TARGET_FILE_DIR:vpinball>"
          )
       endif()
+      # hidapi library
+      foreach(_lib "libhidapi-hidraw.so" "libhidapi-hidraw.so.0" "libhidapi-hidraw.so.0.15.0")
+         if(EXISTS "${RUNTIME_LIBS_DIR}/${_lib}")
+            add_custom_command(TARGET vpinball POST_BUILD
+               COMMAND "${CMAKE_COMMAND}" -E copy_if_different "${RUNTIME_LIBS_DIR}/${_lib}" "$<TARGET_FILE_DIR:vpinball>"
+            )
+         endif()
+      endforeach()
+      # winevbs library
+      foreach(_lib "libwinevbs.so" "libwinevbs.so.0" "libwinevbs.so.0.10.4")
+         if(EXISTS "${RUNTIME_LIBS_DIR}/${_lib}")
+            add_custom_command(TARGET vpinball POST_BUILD
+               COMMAND "${CMAKE_COMMAND}" -E copy_if_different "${RUNTIME_LIBS_DIR}/${_lib}" "$<TARGET_FILE_DIR:vpinball>"
+            )
+         endif()
+      endforeach()
+
+      if(RENDERER STREQUAL "BGFX")
+         if(EXISTS "${RUNTIME_LIBS_DIR}/libbgfx.so")
+            add_custom_command(TARGET vpinball POST_BUILD
+               COMMAND "${CMAKE_COMMAND}" -E copy_if_different "${RUNTIME_LIBS_DIR}/libbgfx.so" "$<TARGET_FILE_DIR:vpinball>"
+            )
+         endif()
+      endif()
       if(ENABLE_XR AND RENDERER STREQUAL "BGFX")
-         add_custom_command(TARGET vpinball POST_BUILD
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libopenxr_loader.so" "$<TARGET_FILE_DIR:vpinball>"
-            COMMAND cp -a "${RUNTIME_LIBS_DIR}/libopenxr_loader.so.*" "$<TARGET_FILE_DIR:vpinball>"
-         )
+         foreach(_lib "libopenxr_loader.so" "libopenxr_loader.so.1" "libopenxr_loader.so.1.1" "libopenxr_loader.so.1.1.63")
+            if(EXISTS "${RUNTIME_LIBS_DIR}/${_lib}")
+               add_custom_command(TARGET vpinball POST_BUILD
+                  COMMAND "${CMAKE_COMMAND}" -E copy_if_different "${RUNTIME_LIBS_DIR}/${_lib}" "$<TARGET_FILE_DIR:vpinball>"
+               )
+            endif()
+         endforeach()
       endif()
    endif()
 
@@ -901,9 +933,17 @@ elseif(PLATFORM STREQUAL "ios" OR PLATFORM STREQUAL "ios-simulator" OR PLATFORM 
    )
 
    if(PLATFORM STREQUAL "android")
-      add_custom_command(TARGET vpinball POST_BUILD
-         COMMAND cp -a "${RUNTIME_LIBS_DIR}/*.so" "$<TARGET_FILE_DIR:vpinball>"
-      )
+      # Copy all .so files from runtime libs directory
+      file(GLOB _android_so_libs "${RUNTIME_LIBS_DIR}/*.so")
+      if(_android_so_libs)
+         foreach(_so_file ${_android_so_libs})
+            if(EXISTS "${_so_file}")
+               add_custom_command(TARGET vpinball POST_BUILD
+                  COMMAND "${CMAKE_COMMAND}" -E copy_if_different "${_so_file}" "$<TARGET_FILE_DIR:vpinball>"
+               )
+            endif()
+         endforeach()
+      endif()
    endif()
 
 # Web (Emscripten) build
