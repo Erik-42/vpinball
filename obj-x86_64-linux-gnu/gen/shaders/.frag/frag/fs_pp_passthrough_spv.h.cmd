@@ -1,0 +1,1 @@
+-f;fs_pp_passthrough.sc;--platform;linux;-p;spirv;--bin2c;fs_pp_passthrough_spv;--type;fragment|TARGET_spv;STEREO

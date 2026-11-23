@@ -1,0 +1,1 @@
+-f;fs_pp_stereo.sc;--platform;linux;-p;440;--bin2c;fs_pp_stereo_anaglyph_lin_gamma_dyndesat_glsl;--type;fragment|TARGET_glsl;ANAGLYPH;DYNDESAT;GAMMA;NOSTEREO

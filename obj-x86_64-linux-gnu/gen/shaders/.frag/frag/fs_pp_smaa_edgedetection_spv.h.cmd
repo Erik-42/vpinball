@@ -1,0 +1,1 @@
+-f;fs_pp_smaa_EdgeDetection.sc;--platform;linux;-p;spirv;--bin2c;fs_pp_smaa_edgedetection_spv;--type;fragment|TARGET_spv

@@ -1,0 +1,1 @@
+-f;fs_pp_stereo.sc;--platform;linux;-p;spirv;--bin2c;fs_pp_stereo_tb_spv;--type;fragment|TARGET_spv;TB;NOSTEREO

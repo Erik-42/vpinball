@@ -1,0 +1,1 @@
+-f;fs_basic.sc;--platform;linux;-p;spirv;--bin2c;fs_basic_tex_noat_noclip_st_spv;--type;fragment|TARGET_spv;STEREO;TEX;NOCLIP;NOAT

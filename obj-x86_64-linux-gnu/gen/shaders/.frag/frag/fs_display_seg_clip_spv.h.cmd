@@ -1,0 +1,1 @@
+-f;fs_display.sc;--platform;linux;-p;spirv;--bin2c;fs_display_seg_clip_spv;--type;fragment|TARGET_spv;SEG;CLIP

@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/B2SPlugin.dir/plugins/b2s/B2SDataModel.cpp.o"
+  "CMakeFiles/B2SPlugin.dir/plugins/b2s/B2SDataModel.cpp.o.d"
+  "CMakeFiles/B2SPlugin.dir/plugins/b2s/B2SPlugin.cpp.o"
+  "CMakeFiles/B2SPlugin.dir/plugins/b2s/B2SPlugin.cpp.o.d"
+  "CMakeFiles/B2SPlugin.dir/plugins/b2s/B2SRenderer.cpp.o"
+  "CMakeFiles/B2SPlugin.dir/plugins/b2s/B2SRenderer.cpp.o.d"
+  "CMakeFiles/B2SPlugin.dir/plugins/b2s/B2SServer.cpp.o"
+  "CMakeFiles/B2SPlugin.dir/plugins/b2s/B2SServer.cpp.o.d"
+  "CMakeFiles/B2SPlugin.dir/plugins/b2s/DMDOverlay/DMDOverlay.cpp.o"
+  "CMakeFiles/B2SPlugin.dir/plugins/b2s/DMDOverlay/DMDOverlay.cpp.o.d"
+  "CMakeFiles/B2SPlugin.dir/plugins/b2s/common.cpp.o"
+  "CMakeFiles/B2SPlugin.dir/plugins/b2s/common.cpp.o.d"
+  "CMakeFiles/B2SPlugin.dir/plugins/b2s/seg/Dream7Display.cpp.o"
+  "CMakeFiles/B2SPlugin.dir/plugins/b2s/seg/Dream7Display.cpp.o.d"
+  "CMakeFiles/B2SPlugin.dir/plugins/b2s/seg/GraphicsPath.cpp.o"
+  "CMakeFiles/B2SPlugin.dir/plugins/b2s/seg/GraphicsPath.cpp.o.d"
+  "CMakeFiles/B2SPlugin.dir/plugins/b2s/seg/LEDBox.cpp.o"
+  "CMakeFiles/B2SPlugin.dir/plugins/b2s/seg/LEDBox.cpp.o.d"
+  "CMakeFiles/B2SPlugin.dir/plugins/b2s/seg/Matrix.cpp.o"
+  "CMakeFiles/B2SPlugin.dir/plugins/b2s/seg/Matrix.cpp.o.d"
+  "CMakeFiles/B2SPlugin.dir/plugins/b2s/seg/SegGraphics.cpp.o"
+  "CMakeFiles/B2SPlugin.dir/plugins/b2s/seg/SegGraphics.cpp.o.d"
+  "CMakeFiles/B2SPlugin.dir/plugins/b2s/seg/Segment.cpp.o"
+  "CMakeFiles/B2SPlugin.dir/plugins/b2s/seg/Segment.cpp.o.d"
+  "CMakeFiles/B2SPlugin.dir/plugins/b2s/seg/SegmentNumber.cpp.o"
+  "CMakeFiles/B2SPlugin.dir/plugins/b2s/seg/SegmentNumber.cpp.o.d"
+  "CMakeFiles/B2SPlugin.dir/plugins/nixie/NixieLayoutFile.cpp.o"
+  "CMakeFiles/B2SPlugin.dir/plugins/nixie/NixieLayoutFile.cpp.o.d"
+  "CMakeFiles/B2SPlugin.dir/plugins/plugins/ResURIResolver.cpp.o"
+  "CMakeFiles/B2SPlugin.dir/plugins/plugins/ResURIResolver.cpp.o.d"
+  "CMakeFiles/B2SPlugin.dir/third-party/include/tinyxml2/tinyxml2.cpp.o"
+  "CMakeFiles/B2SPlugin.dir/third-party/include/tinyxml2/tinyxml2.cpp.o.d"
+  "plugins/b2s/plugin-b2s.pdb"
+  "plugins/b2s/plugin-b2s.so"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/B2SPlugin.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

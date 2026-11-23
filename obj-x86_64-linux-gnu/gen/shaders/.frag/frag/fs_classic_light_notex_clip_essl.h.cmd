@@ -1,0 +1,1 @@
+-f;fs_classic_light.sc;--platform;android;-p;320_es;--bin2c;fs_classic_light_notex_clip_essl;--type;fragment|TARGET_essl;NOSTEREO;NOTEX;CLIP;NOSHADOW

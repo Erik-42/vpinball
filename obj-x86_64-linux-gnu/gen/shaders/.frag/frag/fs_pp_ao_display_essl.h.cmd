@@ -1,0 +1,1 @@
+-f;fs_pp_ao_display.sc;--platform;android;-p;320_es;--bin2c;fs_pp_ao_display_essl;--type;fragment|TARGET_essl;NOSTEREO

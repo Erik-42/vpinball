@@ -1,0 +1,1 @@
+-f;fs_dmd.sc;--platform;linux;-p;440;--bin2c;fs_dmd_clip_glsl;--type;fragment|TARGET_glsl;DMD;CLIP

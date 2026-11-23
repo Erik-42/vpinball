@@ -1,0 +1,1 @@
+-f;fs_pp_faaa.sc;--platform;android;-p;320_es;--bin2c;fs_pp_faaa_st_essl;--type;fragment|TARGET_essl;STEREO

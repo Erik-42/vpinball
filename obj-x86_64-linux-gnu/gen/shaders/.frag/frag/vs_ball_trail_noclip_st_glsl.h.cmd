@@ -1,0 +1,1 @@
+-f;vs_ball_trail.sc;--platform;linux;-p;440;--bin2c;vs_ball_trail_noclip_st_glsl;--type;vertex|TARGET_glsl;STEREO;NOCLIP

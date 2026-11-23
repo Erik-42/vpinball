@@ -1,0 +1,224 @@
+{
+    "generated_table": {
+        "table_name": "Space Invaders II",
+        "manufacturer": "Williams",
+        "theme": "Space/Cyberpunk",
+        "difficulty": "intermediate",
+        "version": "1.0.0",
+        "elements": {
+            "bumpers": [
+                {
+                    "name": "AlienBumper1",
+                    "type": "bumper",
+                    "x": 320,
+                    "y": 240,
+                    "z": 0,
+                    "rotation": 0,
+                    "properties": {
+                        "size": "large",
+                        "score": 500,
+                        "sound": "alien_bumper.wav",
+                        "effect": "electricity",
+                        "color": "#00FFFF"
+                    }
+                },
+                {
+                    "name": "AlienBumper2",
+                    "type": "bumper",
+                    "x": 180,
+                    "y": 180,
+                    "z": 0,
+                    "rotation": 0,
+                    "properties": {
+                        "size": "medium",
+                        "score": 100,
+                        "sound": "alien_bumper.wav",
+                        "effect": "electricity"
+                    }
+                },
+                {
+                    "name": "AlienBumper3",
+                    "type": "bumper",
+                    "x": 460,
+                    "y": 300,
+                    "z": 0,
+                    "rotation": 0,
+                    "properties": {
+                        "size": "medium",
+                        "score": 100,
+                        "sound": "alien_bumper.wav",
+                        "effect": "electricity"
+                    }
+                }
+            ],
+            "flippers": [
+                {
+                    "name": "LeftFlipper",
+                    "type": "flipper",
+                    "x": 100,
+                    "y": 350,
+                    "z": 0,
+                    "rotation": 180,
+                    "properties": {
+                        "power": 100,
+                        "elasticity": 1.2,
+                        "endzone": 150,
+                        "tilt_sensitivity": 2
+                    }
+                },
+                {
+                    "name": "RightFlipper",
+                    "type": "flipper",
+                    "x": 540,
+                    "y": 350,
+                    "z": 0,
+                    "rotation": 0,
+                    "properties": {
+                        "power": 100,
+                        "elasticity": 1.2,
+                        "endzone": 150,
+                        "tilt_sensitivity": 2
+                    }
+                },
+                {
+                    "name": "MiniFlipper",
+                    "type": "flipper",
+                    "x": 200,
+                    "y": 120,
+                    "z": 0,
+                    "rotation": 90,
+                    "properties": {
+                        "power": 50,
+                        "elasticity": 1.1
+                    }
+                }
+            ],
+            "targets": [
+                {
+                    "name": "Target1",
+                    "type": "target",
+                    "x": 200,
+                    "y": 300,
+                    "z": 0,
+                    "rotation": 0,
+                    "properties": {
+                        "score": 100,
+                        "sound": "target_hit.wav",
+                        "lit_color": "#FFFF00",
+                        "unlit_color": "#333333"
+                    }
+                },
+                {
+                    "name": "Target2",
+                    "type": "target",
+                    "x": 440,
+                    "y": 300,
+                    "z": 0,
+                    "rotation": 0,
+                    "properties": {
+                        "score": 100,
+                        "sound": "target_hit.wav"
+                    }
+                },
+                {
+                    "name": "DropTarget1",
+                    "type": "target",
+                    "x": 320,
+                    "y": 100,
+                    "z": 0,
+                    "rotation": 0,
+                    "properties": {
+                        "score": 500,
+                        "sound": "drop_target.wav",
+                        "reset_time": 5.0,
+                        "lockable": true
+                    }
+                }
+            ],
+            "drain": [
+                {
+                    "name": "BallDrain",
+                    "type": "drain",
+                    "x": 320,
+                    "y": 400,
+                    "z": 0,
+                    "rotation": 0,
+                    "properties": {
+                        "sound": "ball_down.wav",
+                        "tilt_prevention": true,
+                        "search_timer": 10.0
+                    }
+                }
+            ],
+            "silloscopes": [
+                {
+                    "name": "Silloscope1",
+                    "type": "silloscope",
+                    "x": 150,
+                    "y": 280,
+                    "z": 0,
+                    "rotation": 0,
+                    "properties": {
+                        "score": 500,
+                        "multiball_enable": true,
+                        "max_balls": 3
+                    }
+                }
+            ],
+            "triggers": [
+                {
+                    "name": "LaunchTrigger",
+                    "type": "trigger",
+                    "x": 320,
+                    "y": 380,
+                    "z": 0,
+                    "rotation": 0,
+                    "properties": {
+                        "min_time": 5,
+                        "ball_count": 1
+                    }
+                }
+            ],
+            "lights": [
+                {
+                    "name": "StartLight",
+                    "type": "light",
+                    "x": 320,
+                    "y": 200,
+                    "z": 0,
+                    "rotation": 0,
+                    "properties": {
+                        "sequence": "playfield_overlay",
+                        "color": "#FF0000",
+                        "interval": 1.0
+                    }
+                }
+            ]
+        },
+        "physics": {
+            "gravity": 1.0,
+            "mass": 1.0,
+            "friction": 0.5,
+            "elasticity": 0.85,
+            "ball_radius": 13.0,
+            "playfield_angle": -4.0,
+            "tilt_sensitivity": 2
+        },
+        "scoring": {
+            "multiball_start": 3,
+            "multiball_locks": 3,
+            "skillshot_active": true,
+            "strike_mode_active": false,
+            "castle_level": 0
+        },
+        "scripts": {
+            "vbs": "Sub Main()\n    ' Generated by IA Assistant\n    ' Table: Space Invaders II\nEnd Sub\n\nSub GameOver()\n    ' Reset all modes\nEnd Sub",
+            "autofire": "Sub AutFireLeftFlipper()\n    ' Auto-fire logic\nEnd Sub"
+        },
+        "music": {
+            "theme": "cyberpunk_theme.mp3",
+            "multiball": "multiball_theme.mp3",
+            "game_over": "game_over_theme.mp3"
+        }
+    }
+}

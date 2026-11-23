@@ -2,32 +2,59 @@
 set -e
 
 # postinst script for vpinball
-#
-# see: dh_installdeb(1)
+# Called after installation of the package
 
 case "$1" in
     configure)
-        # Create user data directory if it doesn't exist
-        if [ ! -d "/usr/share/vpinball" ]; then
-            mkdir -p /usr/share/vpinball
+        # Create user configuration directory
+        if [ ! -d "/home/$SUDO_USER/.config/vpinball" ]; then
+            mkdir -p "/home/$SUDO_USER/.config/vpinball"
         fi
 
-        # Set permissions for installed files
-        chown -R root:root /usr/lib/vpinball/plugins 2>/dev/null || true
-        chmod -R 755 /usr/lib/vpinball/plugins 2>/dev/null || true
+        # Create IA Assistant configuration directory
+        mkdir -p "/home/$SUDO_USER/.config/vpinball/tables"
+        mkdir -p "/home/$SUDO_USER/.config/vpinball/tables/iaassistant"
 
-        # Desktop database update (if desktop-file-utils is installed)
+        # Install example configuration if it doesn't exist
+        if [ ! -f "/home/$SUDO_USER/.config/vpinball/iaassistant.conf" ]; then
+            if [ -f "/usr/share/doc/vpinball-common/iaassistant.conf.example" ]; then
+                cp /usr/share/doc/vpinball-common/iaassistant.conf.example \
+                   "/home/$SUDO_USER/.config/vpinball/iaassistant.conf"
+                chown "$SUDO_USER:$SUDO_USER" "/home/$SUDO_USER/.config/vpinball/iaassistant.conf"
+            fi
+        fi
+
+        # Update desktop database
         if command -v update-desktop-database >/dev/null 2>&1; then
-            update-desktop-database -q usr/share/applications || true
+            update-desktop-database -q
         fi
 
-        # Icon cache update (if gtk-update-icon-cache is installed)
-        if command -v gtk-update-icon-cache >/dev/null 2>&1; then
-            gtk-update-icon-cache -q -t usr/share/icons/hicolor 2>/dev/null || true
+        # Update icon cache
+        if [ -d "/usr/share/icons/hicolor" ] && command -v gtk-update-icon-cache >/dev/null 2>&1; then
+            gtk-update-icon-cache -q -t /usr/share/icons/hicolor
         fi
-        ;;
 
-    abort-upgrade|abort-remove|abort-deconfigure)
+        # Print welcome message
+        echo ""
+        echo "========================================"
+        echo "Visual Pinball X a été installé avec succès!"
+        echo "========================================"
+        echo ""
+        echo "Le plugin IA Assistant est inclus et prêt à l'emploi."
+        echo ""
+        echo "Pour configurer votre provider IA:"
+        echo "  nano ~/.config/vpinball/iaassistant.conf"
+        echo ""
+        echo "Pour tester l'application:"
+        echo "  vpinball          # Mode jeu"
+        echo "  vpinball -LiveEdit # Mode éditeur"
+        echo ""
+        echo "Pour plus d'infos sur le plugin IA:"
+        echo "  zcat /usr/share/doc/vpinball-common/IA_ASSISTANT_PLUGIN.md.gz"
+        echo ""
+    ;;
+
+    abort-upgrade|abort-remove|abort-failed)
         ;;
 
     *)

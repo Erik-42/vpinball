@@ -1,0 +1,1 @@
+-f;fs_pp_passthrough.sc;--platform;android;-p;320_es;--bin2c;fs_pp_passthrough_essl;--type;fragment|TARGET_essl;STEREO

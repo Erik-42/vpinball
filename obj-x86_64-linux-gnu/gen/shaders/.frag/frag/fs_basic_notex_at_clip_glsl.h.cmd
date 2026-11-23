@@ -1,0 +1,1 @@
+-f;fs_basic.sc;--platform;linux;-p;440;--bin2c;fs_basic_notex_at_clip_glsl;--type;fragment|TARGET_glsl;NOSTEREO;NOTEX;CLIP;AT

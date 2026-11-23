@@ -1,0 +1,5 @@
+# IA Assistant Plugin files
+plugins/iaassistant/*.so
+plugins/iaassistant/*.so.*
+plugins/iaassistant/*.dylib
+plugins/iaassistant/plugin.cfg

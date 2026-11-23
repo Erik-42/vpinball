@@ -1,0 +1,1 @@
+-f;fs_pp_blur.sc;--platform;android;-p;320_es;--bin2c;fs_blur_15_v_st_essl;--type;fragment|TARGET_essl;STEREO;BLUR_15;VERTICAL

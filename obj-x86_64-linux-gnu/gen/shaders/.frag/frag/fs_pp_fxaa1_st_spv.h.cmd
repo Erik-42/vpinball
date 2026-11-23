@@ -1,0 +1,1 @@
+-f;fs_pp_fxaa.sc;--platform;linux;-p;spirv;--bin2c;fs_pp_fxaa1_st_spv;--type;fragment|TARGET_spv;STEREO;FXAA1

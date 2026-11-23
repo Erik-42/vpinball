@@ -1,0 +1,1 @@
+-f;fs_ball.sc;--platform;linux;-p;spirv;--bin2c;fs_ball_equirectangular_decal_noclip_st_spv;--type;fragment|TARGET_spv;STEREO;EQUIRECTANGULAR;DECAL;NOCLIP

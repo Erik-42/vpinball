@@ -1,0 +1,1 @@
+-f;fs_light.sc;--platform;android;-p;320_es;--bin2c;fs_light_ballshadow_noclip_essl;--type;fragment|TARGET_essl;NOCLIP;BALLSHADOW

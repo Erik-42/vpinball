@@ -1,0 +1,1 @@
+-f;fs_display.sc;--platform;linux;-p;440;--bin2c;fs_display_crt_noclip_glsl;--type;fragment|TARGET_glsl;CRT;NOCLIP

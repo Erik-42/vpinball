@@ -1,0 +1,1 @@
+-f;fs_unshaded.sc;--platform;linux;-p;spirv;--bin2c;fs_unshaded_notex_noclip_st_spv;--type;fragment|TARGET_spv;STEREO;NOTEX;NOCLIP;NOSHADOW

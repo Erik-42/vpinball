@@ -1,0 +1,1 @@
+-f;fs_pp_bilateral_cas.sc;--platform;linux;-p;440;--bin2c;fs_pp_bilateral_cas_glsl;--type;fragment|TARGET_glsl;NOSTEREO

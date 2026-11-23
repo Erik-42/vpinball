@@ -1,0 +1,1 @@
+-f;vs_pp_smaa_BlendingWeightCalculation.sc;--platform;linux;-p;spirv;--bin2c;vs_pp_smaa_blendweightcalculation_spv;--type;vertex|TARGET_spv

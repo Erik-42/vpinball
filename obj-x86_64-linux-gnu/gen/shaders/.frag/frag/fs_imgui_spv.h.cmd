@@ -1,0 +1,1 @@
+-f;fs_imgui.sc;--platform;linux;-p;spirv;--bin2c;fs_imgui_spv;--type;fragment|TARGET_spv;NOSTEREO

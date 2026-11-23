@@ -1,0 +1,1 @@
+-f;fs_light.sc;--platform;linux;-p;spirv;--bin2c;fs_light_noshadow_clip_spv;--type;fragment|TARGET_spv;CLIP;NOSHADOW

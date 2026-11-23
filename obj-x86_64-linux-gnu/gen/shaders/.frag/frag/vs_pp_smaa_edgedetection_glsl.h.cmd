@@ -1,0 +1,1 @@
+-f;vs_pp_smaa_EdgeDetection.sc;--platform;linux;-p;440;--bin2c;vs_pp_smaa_edgedetection_glsl;--type;vertex|TARGET_glsl

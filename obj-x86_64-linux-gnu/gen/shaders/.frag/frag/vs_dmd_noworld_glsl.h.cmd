@@ -1,0 +1,1 @@
+-f;vs_dmd.sc;--platform;linux;-p;440;--bin2c;vs_dmd_noworld_glsl;--type;vertex|TARGET_glsl

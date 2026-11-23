@@ -1,0 +1,1 @@
+-f;fs_pp_bloom.sc;--platform;android;-p;320_es;--bin2c;fs_pp_bloom_essl;--type;fragment|TARGET_essl;NOSTEREO

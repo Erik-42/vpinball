@@ -1,0 +1,1 @@
+-f;fs_pp_irradiance.sc;--platform;android;-p;320_es;--bin2c;fs_pp_irradiance_st_essl;--type;fragment|TARGET_essl;STEREO

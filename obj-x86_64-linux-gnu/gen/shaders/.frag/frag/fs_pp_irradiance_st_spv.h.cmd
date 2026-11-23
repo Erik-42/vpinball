@@ -1,0 +1,1 @@
+-f;fs_pp_irradiance.sc;--platform;linux;-p;spirv;--bin2c;fs_pp_irradiance_st_spv;--type;fragment|TARGET_spv;STEREO

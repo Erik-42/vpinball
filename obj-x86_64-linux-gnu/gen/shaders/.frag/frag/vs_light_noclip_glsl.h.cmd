@@ -1,0 +1,1 @@
+-f;vs_light.sc;--platform;linux;-p;440;--bin2c;vs_light_noclip_glsl;--type;vertex|TARGET_glsl;NOCLIP

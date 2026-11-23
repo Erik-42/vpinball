@@ -1,0 +1,1 @@
+-f;vs_postprocess.sc;--platform;android;-p;320_es;--bin2c;vs_postprocess_st_essl;--type;vertex|TARGET_essl;STEREO

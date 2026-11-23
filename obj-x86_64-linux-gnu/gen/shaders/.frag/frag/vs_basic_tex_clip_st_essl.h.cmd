@@ -1,0 +1,1 @@
+-f;vs_basic.sc;--platform;android;-p;320_es;--bin2c;vs_basic_tex_clip_st_essl;--type;vertex|TARGET_essl;STEREO;TEX;CLIP

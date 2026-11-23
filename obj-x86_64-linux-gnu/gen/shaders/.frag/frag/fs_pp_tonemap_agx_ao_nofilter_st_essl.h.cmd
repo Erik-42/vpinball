@@ -1,0 +1,1 @@
+-f;fs_pp_tonemap.sc;--platform;android;-p;320_es;--bin2c;fs_pp_tonemap_agx_ao_nofilter_st_essl;--type;fragment|TARGET_essl;STEREO;AGX;AO;NOFILTER

@@ -1,0 +1,1 @@
+-f;fs_pp_blur.sc;--platform;linux;-p;440;--bin2c;fs_blur_9_v_st_glsl;--type;fragment|TARGET_glsl;STEREO;BLUR_9;VERTICAL

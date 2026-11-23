@@ -1,0 +1,1 @@
+-f;fs_basic.sc;--platform;linux;-p;440;--bin2c;fs_basic_refl_clip_st_glsl;--type;fragment|TARGET_glsl;STEREO;CLIP;REFL

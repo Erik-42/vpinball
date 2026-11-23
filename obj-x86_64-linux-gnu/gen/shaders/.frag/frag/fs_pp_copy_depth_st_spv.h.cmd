@@ -1,0 +1,1 @@
+-f;fs_pp_copy_depth.sc;--platform;linux;-p;spirv;--bin2c;fs_pp_copy_depth_st_spv;--type;fragment|TARGET_spv;STEREO

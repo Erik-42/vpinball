@@ -1,0 +1,1 @@
+-f;fs_pp_tonemap.sc;--platform;linux;-p;spirv;--bin2c;fs_pp_tonemap_neutral_noao_nofilter_spv;--type;fragment|TARGET_spv;NOSTEREO;NEUTRAL;NOAO;NOFILTER

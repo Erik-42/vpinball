@@ -1,0 +1,1 @@
+-f;fs_pp_copy_depth.sc;--platform;android;-p;320_es;--bin2c;fs_pp_copy_depth_essl;--type;fragment|TARGET_essl;NOSTEREO

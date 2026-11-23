@@ -1,0 +1,1 @@
+-f;vs_dmd.sc;--platform;android;-p;320_es;--bin2c;vs_dmd_world_clip_essl;--type;vertex|TARGET_essl;WORLD;CLIP

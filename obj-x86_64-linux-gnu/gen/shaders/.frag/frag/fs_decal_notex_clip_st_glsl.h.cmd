@@ -1,0 +1,1 @@
+-f;fs_decal.sc;--platform;linux;-p;440;--bin2c;fs_decal_notex_clip_st_glsl;--type;fragment|TARGET_glsl;STEREO;NOTEX;CLIP

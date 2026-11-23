@@ -1,0 +1,1 @@
+-f;fs_pp_smaa_NeighborhoodBlending.sc;--platform;linux;-p;440;--bin2c;fs_pp_smaa_neighborhoodblending_glsl;--type;fragment|TARGET_glsl

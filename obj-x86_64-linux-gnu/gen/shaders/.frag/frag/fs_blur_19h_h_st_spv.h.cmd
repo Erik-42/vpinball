@@ -1,0 +1,1 @@
+-f;fs_pp_blur.sc;--platform;linux;-p;spirv;--bin2c;fs_blur_19h_h_st_spv;--type;fragment|TARGET_spv;STEREO;BLUR_19H;HORIZONTAL

@@ -1,0 +1,1 @@
+-f;vs_vr_mask.sc;--platform;android;-p;320_es;--bin2c;vs_vr_mask_essl;--type;vertex|TARGET_essl

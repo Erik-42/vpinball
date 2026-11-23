@@ -1,0 +1,1 @@
+-f;fs_pp_tonemap.sc;--platform;linux;-p;spirv;--bin2c;fs_pp_tonemap_reinhard_ao_filter_rgb_spv;--type;fragment|TARGET_spv;NOSTEREO;REINHARD;AO;FILTER;RGB

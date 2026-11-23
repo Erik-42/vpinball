@@ -1,0 +1,1 @@
+-f;vs_basic.sc;--platform;linux;-p;440;--bin2c;vs_classic_light_tex_clip_st_glsl;--type;vertex|TARGET_glsl;STEREO;CLASSIC_LIGHT;TEX;CLIP

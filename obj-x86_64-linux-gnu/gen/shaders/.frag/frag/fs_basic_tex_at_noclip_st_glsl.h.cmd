@@ -1,0 +1,1 @@
+-f;fs_basic.sc;--platform;linux;-p;440;--bin2c;fs_basic_tex_at_noclip_st_glsl;--type;fragment|TARGET_glsl;STEREO;TEX;NOCLIP;AT

@@ -1,0 +1,1 @@
+-f;fs_ball_trail.sc;--platform;linux;-p;spirv;--bin2c;fs_ball_trail_noclip_spv;--type;fragment|TARGET_spv;NOSTEREO;NOCLIP

@@ -6,13 +6,11 @@ Build-Depends: debhelper (>= 13), cmake, pkg-config, gcc, g++, make,
                  libgl1-mesa-dev, libglu1-mesa-dev, libx11-dev, libxext-dev,
                  libxrandr-dev, libxinerama-dev, libxcursor-dev, libxi-dev,
                  libxss-dev, libxtst-dev, libxkbcommon-dev, libxkbcommon-x11-dev,
-                 libasound2-dev, libpulse-dev, libsdl3-dev, libsdl3-ttf-dev,
-                 libfreeimage-dev, libopenal-dev, libvorbis-dev, libogg-dev,
-                 libmysofa-dev, libopus-dev, opus-tools, libavcodec-dev,
-                 libavformat-dev, libavutil-dev, libswscale-dev,
-                 libhidapi-libusb-dev, libftdi1-dev, libserialport-dev,
+                 libasound2-dev, libpulse-dev, libopenal-dev,
+                 libhidapi-dev, libusb-1.0-0-dev,
                  libudev-dev, libdrm-dev, libgbm-dev, libwayland-dev,
-                 libegl-dev, mesa-vulkan-drivers, libgles2-mesa-dev
+                 libegl-dev, mesa-vulkan-drivers, libgles2-mesa-dev,
+                 libcurl4-openssl-dev, nlohmann-json3-dev
 Standards-Version: 4.6.2
 Homepage: https://github.com/vpinball/vpinball
 Vcs-Git: https://github.com/vpinball/vpinball.git
@@ -21,43 +19,43 @@ Vcs-Browser: https://github.com/vpinball/vpinball
 Package: vpinball
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, libgl1, libglx0,
-         libsdl3-0, libsdl3-ttf-0, libfreeimage3,
-         libopenal1, libvorbis0a, libogg0, libmysofa0,
-         libopus0, libavcodec64, libavformat64, libavutil64,
-         libswscale6, libgl1-mesa-dev, libglu1-mesa,
+         libopenal1,
          libx11-6, libxext6, libxrandr2, libxinerama1,
          libxcursor1, libxi6, libxss1, libxtst6,
-         libxkbcommon0, libxkbcommon-x11-0, libasound2,
-         libhidapi-libusb0, libftdi1-2, libserialport0,
+         libxkbcommon0, libasound2,
+         libhidapi-0,
          libudev1, libdrm2, libgbm1, libwayland-client0,
-         libegl1, libgl1-mesa-glx, mesa-vulkan-drivers,
-         libegl1-mesa-dev, libglx-mesa0
+         libegl1,
+         libglx-mesa0, mesa-vulkan-drivers,
+         libcurl4
 Recommends: vpinball-tables, vpinball-docs
 Conflicts: vpinball-legacy
-Breaker: vpinball
 Description: Visual Pinball X - Pinball simulator
  Visual Pinball X is an open source pinball table editor and simulator.
  It simulates pinball table physics and renders the table with OpenGL.
  Features include:
   - Pinball table physics simulation
   - Multiple rendering backends (OpenGL, bgfx)
-  - VR/XR support
-  - Plugin system for DMD, backglass, and other displays
+  - VR/XR support with OpenXR
+  - Plugin system for DMD, backglass, AI assistant, and other displays
   - Table logic controlled via Visual Basic Script
   - Emulation of real pinball machines via PinMAME
+  - AI Assistant plugin for table generation and analysis
  .
- This package includes the main application and necessary libraries.
+ This package includes the main application, necessary libraries,
+ and the IA Assistant plugin for AI-powered table creation.
  .
  Tables are available from community repositories.
 
 Package: vpinball-common
 Architecture: all
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, libcurl4, nlohmann-json3
 Description: Common files for Visual Pinball X
  Architecture-independent files for Visual Pinball X, including:
-  - Documentation
-  - Default configuration files
+  - Documentation including IA Assistant plugin guide
+  - Default configuration files for AI providers
   - Desktop integration files
+  - Example configurations for AI API keys
 
 Package: vpinball-dbg
 Section: debug

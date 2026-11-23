@@ -1,0 +1,1 @@
+-f;fs_decal.sc;--platform;linux;-p;spirv;--bin2c;fs_decal_tex_clip_spv;--type;fragment|TARGET_spv;NOSTEREO;TEX;CLIP

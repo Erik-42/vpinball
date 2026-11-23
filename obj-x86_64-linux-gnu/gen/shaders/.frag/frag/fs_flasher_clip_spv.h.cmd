@@ -1,0 +1,1 @@
+-f;fs_flasher.sc;--platform;linux;-p;spirv;--bin2c;fs_flasher_clip_spv;--type;fragment|TARGET_spv;CLIP

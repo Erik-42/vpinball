@@ -1,0 +1,1 @@
+-f;cs_mipmap.sc;--platform;linux;-p;spirv;--bin2c;cs_mipmap_srgba8_spv;--type;compute|TARGET_spv;FMT_srgba8

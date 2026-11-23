@@ -1,0 +1,1 @@
+-f;fs_light.sc;--platform;linux;-p;440;--bin2c;fs_light_noshadow_clip_glsl;--type;fragment|TARGET_glsl;CLIP;NOSHADOW

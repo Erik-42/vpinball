@@ -1,0 +1,1 @@
+-f;vs_flasher.sc;--platform;android;-p;320_es;--bin2c;vs_flasher_clip_essl;--type;vertex|TARGET_essl;CLIP

@@ -1,0 +1,1 @@
+-f;fs_basic.sc;--platform;linux;-p;spirv;--bin2c;fs_basic_refl_clip_spv;--type;fragment|TARGET_spv;NOSTEREO;CLIP;REFL

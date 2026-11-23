@@ -1,0 +1,1 @@
+-f;fs_basic.sc;--platform;android;-p;320_es;--bin2c;fs_basic_notex_noat_noclip_essl;--type;fragment|TARGET_essl;NOSTEREO;NOTEX;NOCLIP;NOAT

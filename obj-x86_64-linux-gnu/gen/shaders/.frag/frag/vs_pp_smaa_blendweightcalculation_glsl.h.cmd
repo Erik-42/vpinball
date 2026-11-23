@@ -1,0 +1,1 @@
+-f;vs_pp_smaa_BlendingWeightCalculation.sc;--platform;linux;-p;440;--bin2c;vs_pp_smaa_blendweightcalculation_glsl;--type;vertex|TARGET_glsl

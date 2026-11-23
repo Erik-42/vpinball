@@ -1,0 +1,1 @@
+-f;vs_flasher.sc;--platform;linux;-p;440;--bin2c;vs_flasher_noclip_st_glsl;--type;vertex|TARGET_glsl;STEREO;NOCLIP

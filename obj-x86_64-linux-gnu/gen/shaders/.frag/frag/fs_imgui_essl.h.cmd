@@ -1,0 +1,1 @@
+-f;fs_imgui.sc;--platform;android;-p;320_es;--bin2c;fs_imgui_essl;--type;fragment|TARGET_essl;NOSTEREO

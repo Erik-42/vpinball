@@ -1,0 +1,1 @@
+-f;fs_display.sc;--platform;android;-p;320_es;--bin2c;fs_display_crt_clip_essl;--type;fragment|TARGET_essl;CRT;CLIP

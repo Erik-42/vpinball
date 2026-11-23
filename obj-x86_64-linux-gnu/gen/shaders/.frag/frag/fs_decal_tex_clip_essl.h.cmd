@@ -1,0 +1,1 @@
+-f;fs_decal.sc;--platform;android;-p;320_es;--bin2c;fs_decal_tex_clip_essl;--type;fragment|TARGET_essl;NOSTEREO;TEX;CLIP

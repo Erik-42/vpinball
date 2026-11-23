@@ -1,0 +1,1 @@
+-f;fs_pp_tonemap.sc;--platform;linux;-p;spirv;--bin2c;fs_pp_tonemap_agx_ao_nofilter_spv;--type;fragment|TARGET_spv;NOSTEREO;AGX;AO;NOFILTER

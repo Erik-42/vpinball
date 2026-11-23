@@ -1,0 +1,1 @@
+-f;fs_imgui.sc;--platform;linux;-p;440;--bin2c;fs_imgui_glsl;--type;fragment|TARGET_glsl;NOSTEREO

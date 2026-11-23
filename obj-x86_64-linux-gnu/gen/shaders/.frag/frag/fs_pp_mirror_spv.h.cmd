@@ -1,0 +1,1 @@
+-f;fs_pp_mirror.sc;--platform;linux;-p;spirv;--bin2c;fs_pp_mirror_spv;--type;fragment|TARGET_spv;NOSTEREO

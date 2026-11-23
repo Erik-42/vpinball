@@ -1,0 +1,1 @@
+-f;fs_ball.sc;--platform;linux;-p;440;--bin2c;fs_ball_equirectangular_decal_noclip_glsl;--type;fragment|TARGET_glsl;NOSTEREO;EQUIRECTANGULAR;DECAL;NOCLIP

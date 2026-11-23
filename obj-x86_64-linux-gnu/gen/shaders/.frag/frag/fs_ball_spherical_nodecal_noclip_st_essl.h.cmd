@@ -1,0 +1,1 @@
+-f;fs_ball.sc;--platform;android;-p;320_es;--bin2c;fs_ball_spherical_nodecal_noclip_st_essl;--type;fragment|TARGET_essl;STEREO;SPHERICAL;NODECAL;NOCLIP

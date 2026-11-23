@@ -1,0 +1,1 @@
+-f;vs_basic.sc;--platform;linux;-p;440;--bin2c;vs_basic_notex_clip_glsl;--type;vertex|TARGET_glsl;NOSTEREO;NOTEX;CLIP

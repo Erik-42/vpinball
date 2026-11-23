@@ -1,0 +1,1 @@
+-f;fs_pp_bilateral_cas.sc;--platform;android;-p;320_es;--bin2c;fs_pp_bilateral_cas_st_essl;--type;fragment|TARGET_essl;STEREO

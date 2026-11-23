@@ -1,0 +1,1 @@
+-f;fs_pp_tonemap.sc;--platform;linux;-p;spirv;--bin2c;fs_pp_tonemap_wcg_ao_filter_st_spv;--type;fragment|TARGET_spv;STEREO;WCG;AO;FILTER

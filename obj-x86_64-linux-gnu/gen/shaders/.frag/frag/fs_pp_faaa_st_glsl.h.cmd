@@ -1,0 +1,1 @@
+-f;fs_pp_faaa.sc;--platform;linux;-p;440;--bin2c;fs_pp_faaa_st_glsl;--type;fragment|TARGET_glsl;STEREO

@@ -1,0 +1,1 @@
+-f;vs_vr_mask.sc;--platform;linux;-p;spirv;--bin2c;vs_vr_mask_spv;--type;vertex|TARGET_spv

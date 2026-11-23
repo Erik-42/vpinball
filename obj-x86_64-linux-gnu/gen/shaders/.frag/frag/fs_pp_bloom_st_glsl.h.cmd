@@ -1,0 +1,1 @@
+-f;fs_pp_bloom.sc;--platform;linux;-p;440;--bin2c;fs_pp_bloom_st_glsl;--type;fragment|TARGET_glsl;STEREO

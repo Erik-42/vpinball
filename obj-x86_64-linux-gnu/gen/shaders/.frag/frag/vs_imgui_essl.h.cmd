@@ -1,0 +1,1 @@
+-f;vs_imgui.sc;--platform;android;-p;320_es;--bin2c;vs_imgui_essl;--type;vertex|TARGET_essl;NOSTEREO

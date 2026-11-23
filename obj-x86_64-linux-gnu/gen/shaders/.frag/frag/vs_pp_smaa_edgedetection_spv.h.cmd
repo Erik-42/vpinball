@@ -1,0 +1,1 @@
+-f;vs_pp_smaa_EdgeDetection.sc;--platform;linux;-p;spirv;--bin2c;vs_pp_smaa_edgedetection_spv;--type;vertex|TARGET_spv

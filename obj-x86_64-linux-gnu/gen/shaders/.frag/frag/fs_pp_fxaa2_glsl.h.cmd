@@ -1,0 +1,1 @@
+-f;fs_pp_fxaa.sc;--platform;linux;-p;440;--bin2c;fs_pp_fxaa2_glsl;--type;fragment|TARGET_glsl;NOSTEREO;FXAA2

@@ -1,0 +1,1 @@
+-f;fs_decal.sc;--platform;linux;-p;440;--bin2c;fs_decal_tex_noclip_glsl;--type;fragment|TARGET_glsl;NOSTEREO;TEX;NOCLIP

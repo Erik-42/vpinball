@@ -1,0 +1,1 @@
+-f;fs_basic.sc;--platform;linux;-p;440;--bin2c;fs_basic_tex_noat_noclip_glsl;--type;fragment|TARGET_glsl;NOSTEREO;TEX;NOCLIP;NOAT

@@ -1,0 +1,31 @@
+{
+    "api_provider": "freellmapi",
+    "api_key": "",
+    "api_base_url": "https://api.freellmapi.com/v1",
+    "max_tokens": 2048,
+    "temperature": 0.7,
+    "timeout_seconds": 30,
+    "providers": {
+        "freellmapi": {
+            "base_url": "https://api.freellmapi.com/v1",
+            "model": "llama3.1:latest",
+            "supported": true
+        },
+        "fcc": {
+            "base_url": "https://api.fcc.dev",
+            "model": "default",
+            "supported": true
+        },
+        "local": {
+            "base_url": "http://localhost:11434",
+            "model": "llama3.1:latest",
+            "supported": true
+        }
+    },
+    "table_defaults": {
+        "theme": "Generic",
+        "difficulty": "intermediate",
+        "include_scripts": true,
+        "include_music": false
+    }
+}

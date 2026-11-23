@@ -1,0 +1,1 @@
+-f;vs_postprocess.sc;--platform;linux;-p;spirv;--bin2c;vs_postprocess_st_spv;--type;vertex|TARGET_spv;STEREO

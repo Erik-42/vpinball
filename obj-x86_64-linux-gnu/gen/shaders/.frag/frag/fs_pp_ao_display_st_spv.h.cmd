@@ -1,0 +1,1 @@
+-f;fs_pp_ao_display.sc;--platform;linux;-p;spirv;--bin2c;fs_pp_ao_display_st_spv;--type;fragment|TARGET_spv;STEREO

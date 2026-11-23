@@ -1,0 +1,1 @@
+-f;fs_pp_blur.sc;--platform;linux;-p;spirv;--bin2c;fs_blur_13_v_spv;--type;fragment|TARGET_spv;NOSTEREO;BLUR_13;VERTICAL

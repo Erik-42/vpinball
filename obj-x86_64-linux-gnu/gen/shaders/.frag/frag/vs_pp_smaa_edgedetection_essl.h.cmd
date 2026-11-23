@@ -1,0 +1,1 @@
+-f;vs_pp_smaa_EdgeDetection.sc;--platform;android;-p;320_es;--bin2c;vs_pp_smaa_edgedetection_essl;--type;vertex|TARGET_essl

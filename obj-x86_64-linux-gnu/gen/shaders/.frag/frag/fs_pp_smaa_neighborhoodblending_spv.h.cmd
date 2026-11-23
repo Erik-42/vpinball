@@ -1,0 +1,1 @@
+-f;fs_pp_smaa_NeighborhoodBlending.sc;--platform;linux;-p;spirv;--bin2c;fs_pp_smaa_neighborhoodblending_spv;--type;fragment|TARGET_spv

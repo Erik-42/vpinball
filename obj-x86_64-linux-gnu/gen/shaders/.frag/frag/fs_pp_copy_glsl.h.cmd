@@ -1,0 +1,1 @@
+-f;fs_pp_copy.sc;--platform;linux;-p;440;--bin2c;fs_pp_copy_glsl;--type;fragment|TARGET_glsl;NOSTEREO

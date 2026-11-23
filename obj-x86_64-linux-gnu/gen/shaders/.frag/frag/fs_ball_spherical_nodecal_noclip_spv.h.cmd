@@ -1,0 +1,1 @@
+-f;fs_ball.sc;--platform;linux;-p;spirv;--bin2c;fs_ball_spherical_nodecal_noclip_spv;--type;fragment|TARGET_spv;NOSTEREO;SPHERICAL;NODECAL;NOCLIP

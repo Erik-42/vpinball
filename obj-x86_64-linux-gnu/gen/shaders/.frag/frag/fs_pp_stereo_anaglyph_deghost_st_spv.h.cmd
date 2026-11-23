@@ -1,0 +1,1 @@
+-f;fs_pp_stereo.sc;--platform;linux;-p;spirv;--bin2c;fs_pp_stereo_anaglyph_deghost_st_spv;--type;fragment|TARGET_spv;ANAGLYPH;DEGHOST;STEREO

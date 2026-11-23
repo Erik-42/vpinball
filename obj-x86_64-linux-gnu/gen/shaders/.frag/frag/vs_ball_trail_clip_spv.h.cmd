@@ -1,0 +1,1 @@
+-f;vs_ball_trail.sc;--platform;linux;-p;spirv;--bin2c;vs_ball_trail_clip_spv;--type;vertex|TARGET_spv;NOSTEREO;CLIP

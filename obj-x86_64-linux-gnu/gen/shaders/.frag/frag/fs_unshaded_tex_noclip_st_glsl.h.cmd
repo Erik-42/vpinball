@@ -1,0 +1,1 @@
+-f;fs_unshaded.sc;--platform;linux;-p;440;--bin2c;fs_unshaded_tex_noclip_st_glsl;--type;fragment|TARGET_glsl;STEREO;TEX;NOCLIP;NOSHADOW

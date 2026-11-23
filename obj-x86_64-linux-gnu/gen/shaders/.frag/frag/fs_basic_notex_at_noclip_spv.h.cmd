@@ -1,0 +1,1 @@
+-f;fs_basic.sc;--platform;linux;-p;spirv;--bin2c;fs_basic_notex_at_noclip_spv;--type;fragment|TARGET_spv;NOSTEREO;NOTEX;NOCLIP;AT

@@ -2,17 +2,25 @@
 set -e
 
 # prerm script for vpinball
-#
-# see: dh_installdeb(1)
+# Called before removal of the package
 
 case "$1" in
-    remove|deconfigure|failed-upgrade)
+    purge|remove)
+        # Optionally preserve user configuration
+        if [ "$2" = "purge" ]; then
+            # Remove user configuration on purge
+            rm -rf /home/$SUDO_USER/.config/vpinball
+        fi
+        # On remove, keep configuration
+    ;;
+
+    abort-upgrade|abort-remove|abort-failed)
         ;;
 
     *)
         echo "prerm called with unknown argument \`$1'" >&2
         exit 1
-        ;;
+    ;;
 esac
 
 #DEBHELPER#

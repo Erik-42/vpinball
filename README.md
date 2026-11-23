@@ -75,6 +75,43 @@ vpinball -LiveEdit /chemin/vers/table.vpz
 
 Si aucune table n'est spécifiée avec `-play`, le jeu démarre et vous permet de choisir une table.
 
+## IA Assistant Plugin
+
+Visual Pinball X inclut un **plugin IA Assistant** qui permet d'utiliser des modèles d'intelligence artificielle pour :
+
+- **Analyser les tables existantes** et suggérer des améliorations
+- **Générer de nouvelles tables** à partir de thèmes spécifiés
+- **Créer des éléments de table** (bumpers, targets, flippers, etc.)
+- **Valider la physique** des tables
+
+### Providers IA Supportés
+
+- **FreeLlmApi** : Modèles Llama via API gratuite
+- **FCC** : API Free Code Camp
+- **Ollama Local** : Modèles locaux en local
+- **OpenAI** : GPT-4 et modèles OpenAI
+
+### Configuration
+
+```bash
+# Copier le fichier d'exemple de configuration
+cp /usr/share/doc/vpinball-common/iaassistant.conf.example ~/.config/vpinball/iaassistant.conf
+
+# Modifier la configuration pour votre provider IA préféré
+nano ~/.config/vpinball/iaassistant.conf
+```
+
+### Utilisation dans l'éditeur
+
+1. Lancez Visual Pinball X
+2. Allez dans **Plugins > IA Assistant**
+3. Utilisez les commandes :
+   - **Analyser la table** : Analyse et suggestions
+   - **Générer des éléments** : Création d'éléments IA
+   - **Suggestions d'amélioration** : Optimisation de la table
+
+Voir [docs/IA_ASSISTANT_PLUGIN.md](docs/IA_ASSISTANT_PLUGIN.md) pour plus de détails.
+
 ## Participate
 
 Read through our [contribution](CONTRIBUTING.md) rules carefully before opening PRs, please.

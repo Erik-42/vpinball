@@ -1,0 +1,1 @@
+-f;fs_pp_tonemap.sc;--platform;linux;-p;spirv;--bin2c;fs_pp_tonemap_filmic_noao_nofilter_st_spv;--type;fragment|TARGET_spv;STEREO;FILMIC;NOAO;NOFILTER

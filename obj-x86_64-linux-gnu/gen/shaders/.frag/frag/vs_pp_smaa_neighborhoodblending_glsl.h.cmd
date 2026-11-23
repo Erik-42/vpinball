@@ -1,0 +1,1 @@
+-f;vs_pp_smaa_NeighborhoodBlending.sc;--platform;linux;-p;440;--bin2c;vs_pp_smaa_neighborhoodblending_glsl;--type;vertex|TARGET_glsl

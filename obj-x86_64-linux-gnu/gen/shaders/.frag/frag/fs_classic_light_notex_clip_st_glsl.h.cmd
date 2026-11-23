@@ -1,0 +1,1 @@
+-f;fs_classic_light.sc;--platform;linux;-p;440;--bin2c;fs_classic_light_notex_clip_st_glsl;--type;fragment|TARGET_glsl;STEREO;NOTEX;CLIP;NOSHADOW

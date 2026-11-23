@@ -1,0 +1,1 @@
+-f;vs_light.sc;--platform;android;-p;320_es;--bin2c;vs_light_noclip_essl;--type;vertex|TARGET_essl;NOCLIP

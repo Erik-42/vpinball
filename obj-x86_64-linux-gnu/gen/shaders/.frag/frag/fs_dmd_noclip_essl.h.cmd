@@ -1,0 +1,1 @@
+-f;fs_dmd.sc;--platform;android;-p;320_es;--bin2c;fs_dmd_noclip_essl;--type;fragment|TARGET_essl;DMD;NOCLIP

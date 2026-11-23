@@ -1,0 +1,58 @@
+{
+    "analysis_result": {
+        "table_name": "Medieval Madness",
+        "file": "/home/user/.config/vpinball/tables/MedievalMadness.vpx",
+        "elements": {
+            "bumpers": [
+                {"name": "CastleBumper", "x": 320, "y": 240, "score": 100, "sound": "bumper.wav"},
+                {"name": "SkullBumper", "x": 180, "y": 180, "score": 150, "sound": "skull.wav"}
+            ],
+            "flippers": [
+                {"name": "LeftFlipper", "x": 100, "y": 350, "power": 100},
+                {"name": "RightFlipper", "x": 540, "y": 350, "power": 100}
+            ],
+            "targets": [
+                {"name": "Target1", "x": 200, "y": 300, "score": 10},
+                {"name": "Target2", "x": 440, "y": 300, "score": 10}
+            ],
+            "drain": [
+                {"name": "BallDrain", "x": 320, "y": 400}
+            ],
+            "lights": [
+                {"name": "Light1", "x": 250, "y": 220, "sequence": "multiball"},
+                {"name": "Light2", "x": 390, "y": 220, "sequence": "castles"}
+            ]
+        },
+        "improvements": [
+            {
+                "element": "Light1",
+                "type": "light",
+                "suggestion": "Add blinking sequence when castles are lit",
+                "priority": "high",
+                "estimated_effort": "medium"
+            },
+            {
+                "element": "SkullBumper",
+                "type": "bumper",
+                "suggestion": "Add particle effect for skull animation",
+                "priority": "medium",
+                "estimated_effort": "low"
+            },
+            {
+                "element": "BallDrain",
+                "type": "drain",
+                "suggestion": "Add sound effect and ball search timer trigger",
+                "priority": "high",
+                "estimated_effort": "low"
+            }
+        ],
+        "physics_analysis": {
+            "gravity": 1.0,
+            "friction": 0.5,
+            "ball_mass": 1.0,
+            "issues": [
+                "Ball may get stuck near drain without proper playfield angle"
+            ]
+        }
+    }
+}

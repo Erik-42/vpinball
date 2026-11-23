@@ -1,0 +1,1 @@
+-f;fs_unshaded.sc;--platform;linux;-p;440;--bin2c;fs_unshaded_notex_clip_glsl;--type;fragment|TARGET_glsl;NOSTEREO;NOTEX;CLIP;NOSHADOW

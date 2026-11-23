@@ -1,0 +1,1 @@
+-f;fs_pp_motionblur.sc;--platform;linux;-p;440;--bin2c;fs_pp_motionblur_glsl;--type;fragment|TARGET_glsl;NOSTEREO

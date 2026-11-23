@@ -1,0 +1,1 @@
+-f;fs_pp_tonemap.sc;--platform;linux;-p;440;--bin2c;fs_pp_tonemap_neutral_ao_filter_st_glsl;--type;fragment|TARGET_glsl;STEREO;NEUTRAL;AO;FILTER

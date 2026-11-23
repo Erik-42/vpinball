@@ -1,0 +1,1 @@
+-f;vs_basic.sc;--platform;android;-p;320_es;--bin2c;vs_classic_light_notex_clip_essl;--type;vertex|TARGET_essl;NOSTEREO;CLASSIC_LIGHT;NOTEX;CLIP

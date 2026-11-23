@@ -1,0 +1,1 @@
+-f;fs_pp_ao.sc;--platform;android;-p;320_es;--bin2c;fs_pp_ao_filter_essl;--type;fragment|TARGET_essl;NOSTEREO;FILTER

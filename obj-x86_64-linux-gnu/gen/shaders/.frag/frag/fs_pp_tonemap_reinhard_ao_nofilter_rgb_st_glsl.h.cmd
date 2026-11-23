@@ -1,0 +1,1 @@
+-f;fs_pp_tonemap.sc;--platform;linux;-p;440;--bin2c;fs_pp_tonemap_reinhard_ao_nofilter_rgb_st_glsl;--type;fragment|TARGET_glsl;STEREO;REINHARD;AO;NOFILTER;RGB

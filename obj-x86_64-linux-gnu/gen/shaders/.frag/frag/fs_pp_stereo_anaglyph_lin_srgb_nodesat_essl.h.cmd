@@ -1,0 +1,1 @@
+-f;fs_pp_stereo.sc;--platform;android;-p;320_es;--bin2c;fs_pp_stereo_anaglyph_lin_srgb_nodesat_essl;--type;fragment|TARGET_essl;ANAGLYPH;NODESAT;SRGB;NOSTEREO

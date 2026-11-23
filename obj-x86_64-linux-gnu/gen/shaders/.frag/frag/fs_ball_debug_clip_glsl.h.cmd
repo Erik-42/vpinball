@@ -1,0 +1,1 @@
+-f;fs_ball_debug.sc;--platform;linux;-p;440;--bin2c;fs_ball_debug_clip_glsl;--type;fragment|TARGET_glsl;NOSTEREO;CLIP

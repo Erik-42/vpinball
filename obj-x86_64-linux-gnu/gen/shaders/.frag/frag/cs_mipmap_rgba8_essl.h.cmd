@@ -1,0 +1,1 @@
+-f;cs_mipmap.sc;--platform;android;-p;320_es;--bin2c;cs_mipmap_rgba8_essl;--type;compute|TARGET_essl;FMT_rgba8

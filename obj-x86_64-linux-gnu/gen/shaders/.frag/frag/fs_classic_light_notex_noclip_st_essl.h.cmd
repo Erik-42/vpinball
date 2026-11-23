@@ -1,0 +1,1 @@
+-f;fs_classic_light.sc;--platform;android;-p;320_es;--bin2c;fs_classic_light_notex_noclip_st_essl;--type;fragment|TARGET_essl;STEREO;NOTEX;NOCLIP;NOSHADOW

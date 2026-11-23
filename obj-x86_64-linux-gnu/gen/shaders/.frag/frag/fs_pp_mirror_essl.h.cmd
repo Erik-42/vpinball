@@ -1,0 +1,1 @@
+-f;fs_pp_mirror.sc;--platform;android;-p;320_es;--bin2c;fs_pp_mirror_essl;--type;fragment|TARGET_essl;NOSTEREO

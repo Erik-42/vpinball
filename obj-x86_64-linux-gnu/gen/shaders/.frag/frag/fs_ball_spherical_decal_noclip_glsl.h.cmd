@@ -1,0 +1,1 @@
+-f;fs_ball.sc;--platform;linux;-p;440;--bin2c;fs_ball_spherical_decal_noclip_glsl;--type;fragment|TARGET_glsl;NOSTEREO;SPHERICAL;DECAL;NOCLIP

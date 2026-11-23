@@ -1,0 +1,1 @@
+-f;vs_basic.sc;--platform;linux;-p;spirv;--bin2c;vs_classic_light_notex_clip_spv;--type;vertex|TARGET_spv;NOSTEREO;CLASSIC_LIGHT;NOTEX;CLIP

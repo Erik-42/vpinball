@@ -1,0 +1,1 @@
+-f;fs_classic_light.sc;--platform;linux;-p;spirv;--bin2c;fs_classic_light_tex_clip_spv;--type;fragment|TARGET_spv;NOSTEREO;TEX;CLIP;NOSHADOW

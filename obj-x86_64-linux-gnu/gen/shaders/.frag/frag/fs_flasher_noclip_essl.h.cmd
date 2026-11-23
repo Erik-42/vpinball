@@ -1,0 +1,1 @@
+-f;fs_flasher.sc;--platform;android;-p;320_es;--bin2c;fs_flasher_noclip_essl;--type;fragment|TARGET_essl;NOCLIP

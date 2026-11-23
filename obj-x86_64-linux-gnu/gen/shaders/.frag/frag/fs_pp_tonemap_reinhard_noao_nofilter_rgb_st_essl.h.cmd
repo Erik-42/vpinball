@@ -1,0 +1,1 @@
+-f;fs_pp_tonemap.sc;--platform;android;-p;320_es;--bin2c;fs_pp_tonemap_reinhard_noao_nofilter_rgb_st_essl;--type;fragment|TARGET_essl;STEREO;REINHARD;NOAO;NOFILTER;RGB

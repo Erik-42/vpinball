@@ -1,0 +1,1 @@
+-f;fs_basic.sc;--platform;linux;-p;spirv;--bin2c;fs_basic_tex_at_clip_st_spv;--type;fragment|TARGET_spv;STEREO;TEX;CLIP;AT

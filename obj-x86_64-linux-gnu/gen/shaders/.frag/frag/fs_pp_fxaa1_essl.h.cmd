@@ -1,0 +1,1 @@
+-f;fs_pp_fxaa.sc;--platform;android;-p;320_es;--bin2c;fs_pp_fxaa1_essl;--type;fragment|TARGET_essl;NOSTEREO;FXAA1

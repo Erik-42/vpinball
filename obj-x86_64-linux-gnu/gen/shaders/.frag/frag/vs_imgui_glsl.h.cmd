@@ -1,0 +1,1 @@
+-f;vs_imgui.sc;--platform;linux;-p;440;--bin2c;vs_imgui_glsl;--type;vertex|TARGET_glsl;NOSTEREO

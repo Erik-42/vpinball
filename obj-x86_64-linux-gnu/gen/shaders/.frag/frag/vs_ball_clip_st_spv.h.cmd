@@ -1,0 +1,1 @@
+-f;vs_ball.sc;--platform;linux;-p;spirv;--bin2c;vs_ball_clip_st_spv;--type;vertex|TARGET_spv;STEREO;CLIP

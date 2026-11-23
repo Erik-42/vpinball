@@ -1,0 +1,1 @@
+-f;fs_unshaded.sc;--platform;android;-p;320_es;--bin2c;fs_unshaded_notex_ballshadow_clip_st_essl;--type;fragment|TARGET_essl;STEREO;NOTEX;CLIP;SHADOW

@@ -1,0 +1,1 @@
+-f;vs_flasher.sc;--platform;linux;-p;440;--bin2c;vs_flasher_clip_glsl;--type;vertex|TARGET_glsl;CLIP

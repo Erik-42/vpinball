@@ -1,0 +1,1 @@
+-f;fs_pp_ao.sc;--platform;linux;-p;440;--bin2c;fs_pp_ao_nofilter_st_glsl;--type;fragment|TARGET_glsl;STEREO;NOFILTER

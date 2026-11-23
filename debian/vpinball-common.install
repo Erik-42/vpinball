@@ -3,6 +3,8 @@ docs usr/share/doc/vpinball-common/
 README.md usr/share/doc/vpinball-common/
 LICENSE usr/share/doc/vpinball-common/
 docs/Installation\ sur\ Linux.md usr/share/doc/vpinball-common/
+docs/IA_ASSISTANT_PLUGIN.md usr/share/doc/vpinball-common/
+debian/iaassistant.conf.example usr/share/doc/vpinball-common/examples/
 
 # Desktop integration (architecture-independent)
 apps/linux/vpinball.desktop usr/share/applications/

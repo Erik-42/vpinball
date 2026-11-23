@@ -1,0 +1,1 @@
+-f;fs_unshaded.sc;--platform;linux;-p;spirv;--bin2c;fs_unshaded_tex_noclip_spv;--type;fragment|TARGET_spv;NOSTEREO;TEX;NOCLIP;NOSHADOW

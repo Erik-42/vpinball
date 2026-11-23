@@ -1,0 +1,1 @@
+-f;fs_pp_blur.sc;--platform;linux;-p;440;--bin2c;fs_blur_23_v_glsl;--type;fragment|TARGET_glsl;NOSTEREO;BLUR_23;VERTICAL

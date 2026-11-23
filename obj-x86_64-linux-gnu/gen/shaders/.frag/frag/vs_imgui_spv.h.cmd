@@ -1,0 +1,1 @@
+-f;vs_imgui.sc;--platform;linux;-p;spirv;--bin2c;vs_imgui_spv;--type;vertex|TARGET_spv;NOSTEREO

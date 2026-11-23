@@ -1,0 +1,1 @@
+-f;fs_ball.sc;--platform;linux;-p;spirv;--bin2c;fs_ball_spherical_nodecal_clip_st_spv;--type;fragment|TARGET_spv;STEREO;SPHERICAL;NODECAL;CLIP

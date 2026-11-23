@@ -1,0 +1,15 @@
+# Hashes of file build rules.
+d838ad52a1e839fdcb7653f3c88f7c71 CMakeFiles/vpx-shaders
+97432720615ad1ba40d0e221e9769b79 gen/shaders/bgfx_antialiasing.h
+009833be9524651739bb96878221fd11 gen/shaders/bgfx_ball.h
+9b8f9c12298ae05fcc50cb621371aef0 gen/shaders/bgfx_basic.h
+93e7cb40ebe2c9d65d358f9c07576483 gen/shaders/bgfx_blur.h
+97413e20bca41c2dc521d61e4aac2e04 gen/shaders/bgfx_dmd.h
+b454efd5c8d82aedafa27e5068755a3b gen/shaders/bgfx_flasher.h
+43c796ec0abc47498ad13e64414186ab gen/shaders/bgfx_imgui.h
+d91e880a43927507816270f83410a67c gen/shaders/bgfx_light.h
+b0410d1dd243fd679c11cc5ff6965083 gen/shaders/bgfx_mipmap.h
+00d5bea2adc88b65fda611758bdeb6dc gen/shaders/bgfx_motionblur.h
+0c90b4726bcec6d8992d1bd4508b50d1 gen/shaders/bgfx_postprocess.h
+9d951d9966d97e1c847796f97f078bbe gen/shaders/bgfx_stereo.h
+e3c21bc6b99049be253355c83f34c82b gen/shaders/bgfx_tonemap.h

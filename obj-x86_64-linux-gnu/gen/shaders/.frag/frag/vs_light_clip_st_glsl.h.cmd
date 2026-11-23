@@ -1,0 +1,1 @@
+-f;vs_light.sc;--platform;linux;-p;440;--bin2c;vs_light_clip_st_glsl;--type;vertex|TARGET_glsl;CLIP;STEREO

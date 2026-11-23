@@ -1,0 +1,1 @@
+-f;vs_flasher.sc;--platform;android;-p;320_es;--bin2c;vs_flasher_noclip_st_essl;--type;vertex|TARGET_essl;STEREO;NOCLIP

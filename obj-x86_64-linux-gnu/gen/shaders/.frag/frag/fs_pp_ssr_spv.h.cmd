@@ -1,0 +1,1 @@
+-f;fs_pp_ssr.sc;--platform;linux;-p;spirv;--bin2c;fs_pp_ssr_spv;--type;fragment|TARGET_spv;NOSTEREO

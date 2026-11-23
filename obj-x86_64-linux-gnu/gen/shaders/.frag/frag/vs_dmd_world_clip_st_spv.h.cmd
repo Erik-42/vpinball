@@ -1,0 +1,1 @@
+-f;vs_dmd.sc;--platform;linux;-p;spirv;--bin2c;vs_dmd_world_clip_st_spv;--type;vertex|TARGET_spv;WORLD;STEREO;CLIP

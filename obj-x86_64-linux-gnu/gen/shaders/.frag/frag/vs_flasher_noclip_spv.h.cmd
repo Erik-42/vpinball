@@ -1,0 +1,1 @@
+-f;vs_flasher.sc;--platform;linux;-p;spirv;--bin2c;vs_flasher_noclip_spv;--type;vertex|TARGET_spv;NOCLIP

@@ -1,0 +1,1 @@
+-f;fs_pp_tonemap.sc;--platform;linux;-p;440;--bin2c;fs_pp_tonemap_filmic_ao_filter_glsl;--type;fragment|TARGET_glsl;NOSTEREO;FILMIC;AO;FILTER

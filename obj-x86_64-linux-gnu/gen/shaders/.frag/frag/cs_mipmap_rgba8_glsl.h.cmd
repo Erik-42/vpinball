@@ -1,0 +1,1 @@
+-f;cs_mipmap.sc;--platform;linux;-p;440;--bin2c;cs_mipmap_rgba8_glsl;--type;compute|TARGET_glsl;FMT_rgba8

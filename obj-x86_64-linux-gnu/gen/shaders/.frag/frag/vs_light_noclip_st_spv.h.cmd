@@ -1,0 +1,1 @@
+-f;vs_light.sc;--platform;linux;-p;spirv;--bin2c;vs_light_noclip_st_spv;--type;vertex|TARGET_spv;NOCLIP;STEREO

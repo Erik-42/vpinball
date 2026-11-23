@@ -1,0 +1,1 @@
+-f;fs_ball.sc;--platform;android;-p;320_es;--bin2c;fs_ball_spherical_decal_clip_essl;--type;fragment|TARGET_essl;NOSTEREO;SPHERICAL;DECAL;CLIP

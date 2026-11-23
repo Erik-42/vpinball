@@ -1,0 +1,1 @@
+-f;fs_pp_blur.sc;--platform;android;-p;320_es;--bin2c;fs_blur_9_h_essl;--type;fragment|TARGET_essl;NOSTEREO;BLUR_9;HORIZONTAL

@@ -1,0 +1,1 @@
+-f;fs_pp_stereo.sc;--platform;linux;-p;440;--bin2c;fs_pp_stereo_int_glsl;--type;fragment|TARGET_glsl;INT;NOSTEREO

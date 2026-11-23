@@ -1,0 +1,1 @@
+-f;fs_display.sc;--platform;linux;-p;spirv;--bin2c;fs_display_crtnuance_noclip_spv;--type;fragment|TARGET_spv;CRTNUANCE;NOCLIP

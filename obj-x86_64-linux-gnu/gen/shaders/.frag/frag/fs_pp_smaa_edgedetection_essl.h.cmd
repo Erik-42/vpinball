@@ -1,0 +1,1 @@
+-f;fs_pp_smaa_EdgeDetection.sc;--platform;android;-p;320_es;--bin2c;fs_pp_smaa_edgedetection_essl;--type;fragment|TARGET_essl

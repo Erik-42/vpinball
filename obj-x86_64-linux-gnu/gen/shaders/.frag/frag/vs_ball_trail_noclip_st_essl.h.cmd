@@ -1,0 +1,1 @@
+-f;vs_ball_trail.sc;--platform;android;-p;320_es;--bin2c;vs_ball_trail_noclip_st_essl;--type;vertex|TARGET_essl;STEREO;NOCLIP

@@ -1,0 +1,1 @@
+-f;fs_dmd.sc;--platform;android;-p;320_es;--bin2c;fs_sprite_notex_clip_essl;--type;fragment|TARGET_essl;SPRITE;NOTEX;CLIP

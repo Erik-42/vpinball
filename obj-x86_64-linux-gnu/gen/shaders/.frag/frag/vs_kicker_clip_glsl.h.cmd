@@ -1,0 +1,1 @@
+-f;vs_basic.sc;--platform;linux;-p;440;--bin2c;vs_kicker_clip_glsl;--type;vertex|TARGET_glsl;NOSTEREO;CLIP;KICKER

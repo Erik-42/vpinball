@@ -1,0 +1,1 @@
+-f;fs_dmd.sc;--platform;linux;-p;spirv;--bin2c;fs_dmd_clip_spv;--type;fragment|TARGET_spv;DMD;CLIP

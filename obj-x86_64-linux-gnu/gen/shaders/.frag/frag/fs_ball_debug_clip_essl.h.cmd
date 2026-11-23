@@ -1,0 +1,1 @@
+-f;fs_ball_debug.sc;--platform;android;-p;320_es;--bin2c;fs_ball_debug_clip_essl;--type;fragment|TARGET_essl;NOSTEREO;CLIP

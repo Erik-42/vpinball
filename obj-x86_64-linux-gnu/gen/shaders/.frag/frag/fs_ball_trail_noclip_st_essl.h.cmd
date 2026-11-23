@@ -1,0 +1,1 @@
+-f;fs_ball_trail.sc;--platform;android;-p;320_es;--bin2c;fs_ball_trail_noclip_st_essl;--type;fragment|TARGET_essl;STEREO;NOCLIP
